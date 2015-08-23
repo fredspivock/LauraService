@@ -1,0 +1,8 @@
+<div class="container-fluid">
+	<ul>
+		<li ng-repeat="project in projects">
+			<span>{{ project.name }}</span>
+			<a href="#/project/ {{ project.id }}"><img class="img-responsive" ng-src="{{ project.imageUrl }}"></a>
+		</li>
+	</ul>
+</div>

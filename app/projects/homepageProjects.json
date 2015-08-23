@@ -1,10 +1,12 @@
 [
     {
-        "project": , 
-        "id": "motorola-xoom-with-wi-fi", 
-        "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg", 
-        "title": "Motorola XOOM\u2122 with Wi-Fi"
+        "id": "homeProject1", 
+        "imageUrl": "img/homeProjects/test.jpg", 
+        "name": "projectName"
     }, 
-
-
+    {
+        "id": "motorola-xoom", 
+        "imageUrl": "img/phones/motorola-xoom.0.jpg", 
+        "name": "MOTOROLA XOOM\u2122"
+    }
 ]
