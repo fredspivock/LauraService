@@ -1,7 +1,15 @@
 
-#icon{
+/* Nav Bar */
+
+#icon {
 
 	width: 80px;
+}
+
+#navSide {
+
+	padding-top: 60px;
+	padding-right: 5%;
 }
 
 ul {
@@ -12,4 +20,30 @@ ul {
 
 li {
 	display:inline;
+}
+
+/* For the home Page */
+
+.projectName {
+
+	position: absolute;
+	text-align:center;
+	width: 100%;
+	top: 250px;
+	color: white;
+
+}
+
+.projectImage {
+
+	position: relative;
+	width: 100%;
+	border: 0;
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+img {
+	padding: 0;
+	border: 0;
 }
