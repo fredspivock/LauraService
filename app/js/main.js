@@ -37,7 +37,6 @@ $(document).ready(function(){
 		for(var i = 0; i < listOfLinks.length; i++)
 		{
 			listOfLinks[i] = listOfLinks[i] + 'Link';
-			console.log(listOfLinks[i]);
 			$('#' + listOfLinks[i]).css("border-bottom", "none");
 		}
 	}
