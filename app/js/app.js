@@ -10,8 +10,17 @@ lauraService.config(['$routeProvider', function($routeProvider){
 		templateUrl: 'partials/homepage.html',
 		controller: 'HomepageCtrl'
 
-	}).//Add the individual page here!
+	}).
+	when('/about', {
+
+
+	}).
+	when('/services', {
+
+
+	}).
 	otherwise({
+	
 		redirectTo:'/projects'
 	});
 

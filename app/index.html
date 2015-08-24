@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="bower_components/angular/angular.js"></script>
   	<script src="bower_components/angular-route/angular-route.js"></script>
+  	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  	<script src="js/main.js"></script>
   	<script src="js/app.js"></script>
   	<script src="js/controllers.js"></script>
 </head>
@@ -14,9 +16,9 @@
 <nav>
 	<a><img id="icon" src="img/icon/icon.jpg"></a>
 	<ul id="navSide">
-		<li class="navList"><a href="">Projects</a></li>
-		<li class="navList"><a href="">About</a></li>
-		<li class="navList"><a href="">Services/Clients</a></li>
+		<li class="navList"><a id="projectsLink" href="#/projects">Projects</a></li>
+		<li class="navList"><a id="aboutLink" href="#/about">About</a></li>
+		<li class="navList"><a id="servicesLink"href="#/services">Services/Clients</a></li>
 	</ul>
 </nav>
 	<div ng-view></div>
