@@ -6,13 +6,13 @@ var lauraService = angular.module("lauraServiceApp", [
 lauraService.config(['$routeProvider', function($routeProvider){
 
 	$routeProvider.
-	when('/', {
+	when('/projects', {
 		templateUrl: 'partials/homepage.html',
 		controller: 'HomepageCtrl'
 
-	}).
+	}).//Add the individual page here!
 	otherwise({
-		redirecTo:'/'
+		redirectTo:'/projects'
 	});
 
 }]);

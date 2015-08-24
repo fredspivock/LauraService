@@ -3,13 +3,48 @@
 
 #icon {
 
-	width: 80px;
+	width: 50px;
 }
 
 #navSide {
 
-	padding-top: 60px;
-	padding-right: 5%;
+	position: relative;
+	width: 90%;
+	bottom: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+}
+
+.navList {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* unvisited link */
+a:link {
+    color: #707070;
+}
+
+/* visited link */
+a:visited {
+    color: #707070;
+}
+
+/* mouse over link */
+a:hover {
+    color: #707070;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #707070;
+}
+
+nav {
+
+	height: 60px;
 }
 
 ul {
@@ -20,17 +55,27 @@ ul {
 
 li {
 	display:inline;
+
 }
 
 /* For the home Page */
+
+.projects {
+
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+
+}
 
 .projectName {
 
 	position: absolute;
 	text-align:center;
 	width: 100%;
-	top: 250px;
+	top: 30%;
 	color: white;
+	font-size: 2em;
 
 }
 
@@ -40,7 +85,7 @@ li {
 	width: 100%;
 	border: 0;
 	padding-top: 0;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 img {
