@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 		//adds link to the name to match the id of the 
 		currentHash = currentHash + "Link";
-		$('#' + currentHash).css("border-bottom", "3px solid black");
+		$('#' + currentHash).css("border-bottom", "3px solid #CCFFCC");
 
 	}
 

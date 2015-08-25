@@ -1,8 +1,8 @@
 [
     {
-        "id": "homeProject1", 
-        "imageUrl": "img/homeProjects/test.jpg", 
-        "name": "projectName"
+        "id": "mercedes", 
+        "imageUrl": "img/homeProjects/test.gif", 
+        "name": "Mercedes-Benz Magazine"
     }, 
     {
         "id": "motorola-xoom", 

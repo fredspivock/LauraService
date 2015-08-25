@@ -76,10 +76,11 @@ li {
 	position: absolute;
 	text-align:center;
 	width: 100%;
-	top: 30%;
+	top: 40%;
 	color: white;
 	font-size: 2em;
-	text-shadow: 0px 0px 10px rgba(32,32,32, 0.8);
+	text-shadow: 0px 0px 10px rgba(32,32,32, 0.9);
+	z-index: 1000;
 
 }
 
@@ -95,4 +96,14 @@ li {
 img {
 	padding: 0;
 	border: 0;
+}
+
+.tintImage {
+
+	opacity: .75;
+}
+
+.tinted {
+	display: block;
+	background: rgba(0, 0, 0, 1)
 }

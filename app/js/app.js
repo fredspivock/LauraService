@@ -11,6 +11,9 @@ lauraService.config(['$routeProvider', function($routeProvider){
 		controller: 'HomepageCtrl'
 
 	}).
+	when('/projects/:id', {
+
+	}).
 	when('/about', {
 
 

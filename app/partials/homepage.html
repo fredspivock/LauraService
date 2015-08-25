@@ -2,8 +2,10 @@
 	<ul>
 		<li ng-repeat="project in projects">
 			<div class="projectImage">
-				<p class="projectName">{{project.name}}</p>
-				<a href="#/projects/{{ project.id }}"><img class="img-responsive" ng-src="{{ project.imageUrl }}"></a>
+				<a href="#/projects/{{ project.id }}"><p class="projectName">{{project.name}}</p>
+				<span class="tinted">
+					<img class="img-responsive tintImage" ng-src="{{ project.imageUrl }}"></a>
+				</span>
 			</div>
 		</li>
 	</ul>
