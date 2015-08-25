@@ -8,5 +8,10 @@
         "id": "motorola-xoom", 
         "imageUrl": "img/homeProjects/test2.jpg", 
         "name": "MOTOROLA XOOM\u2122"
+    },
+    {
+        "id": "test3", 
+        "imageUrl": "img/homeProjects/test3.jpg", 
+        "name": "NewOne"
     }
 ]

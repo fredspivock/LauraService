@@ -3,6 +3,8 @@
 
 #icon {
 
+	padding-left: 5px;
+	padding-top: 5px;
 	width: 50px;
 }
 
@@ -61,6 +63,25 @@ li {
 
 }
 
+/* Stuff for the animated nav Bar */
+
+#header {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2001;
+}
+
+#header-wrap {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 2000;
+}
+
+
+
 /* For the home Page */
 
 .projects {
@@ -106,4 +127,23 @@ img {
 .tinted {
 	display: block;
 	background: rgba(0, 0, 0, 1)
+}
+
+#homepageHead {
+
+	height: 400px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#homepageHeadText {
+
+	font-size: 2em;
+	text-align:left;
+	display:inline-block;
+	position: absolute;
+	bottom: 0%;
+
 }
