@@ -1,33 +1,4 @@
 
-/* Nav Bar */
-
-#icon {
-
-	width: 50px;
-}
-
-.iconSpan {
-
-	position: relative;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	top: 30%;
-}
-
-#navSide {
-
-	position: relative;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: right;
-}
-
-.navList {
-	padding-left: 7px;
-	padding-right: 7px;
-}
 
 /* unvisited link */
 a:link {
@@ -53,10 +24,6 @@ a:active {
     text-decoration: none;
 }
 
-nav {
-
-	height: 80px;
-}
 
 ul {
     list-style-type: none;
@@ -68,6 +35,7 @@ li {
 	display:inline;
 
 }
+
 
 /* Stuff for the animated nav Bar */
 
@@ -87,6 +55,79 @@ li {
     height: 80px;
 }
 
+/* Nav Bar */
+
+#icon {
+
+	width: 50px;
+	transition: 0.5s ease;
+	
+}
+
+.iconSpan {
+
+	position: relative;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 30%;
+	transition: 0.5s ease;
+}
+
+#navSide {
+
+	position: relative;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	transition: 0.5s ease;
+}
+
+.navList {
+	padding-left: 7px;
+	padding-right: 7px;
+	transition: 0.5s ease; 
+}
+
+/* Scrolled Nav CSS */
+
+
+
+.scrolled#header-wrap {
+  height: 50px;
+
+}
+
+.scrolled#icon {
+
+	position: absolute;
+	bottom: 0%;
+	width: 30px;
+	transition: 0.5s ease;
+}
+
+.scrolled.iconSpan {
+	position: relative;
+	width: 98%;
+	transition: 0.5s ease;
+
+}
+
+.scrolled#navSide {
+
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 15px;
+	text-align: right;
+	transition: 0.5s ease;
+}
+
+.scrolled#header {
+
+	height: 20px;
+}
 
 
 /* For the home Page */

@@ -10,6 +10,7 @@ $(document).ready(function(){
 
 		underLineCurrent();
 	});
+
 	//check for Location hash and underline link
 	function underLineCurrent()
 	{
@@ -62,6 +63,23 @@ $(document).ready(function(){
             $('#header-wrap').slideDown();
     }
     previousScroll = currentScroll;
+
+    //Adds Scrolled class to nav when moved
+    if(Math.round($(window).scrollTop()) > 100) {
+
+    	$('#header-wrap').addClass('scrolled');
+    	$('.iconSpan').addClass('scrolled');
+    	$('#icon').addClass('scrolled');
+    	$('#navSide').addClass('scrolled');
+    	$('#header').addClass('scrolled');
+    }
+    else {
+    	$('#header-wrap').removeClass('scrolled');
+    	$('.iconSpan').removeClass('scrolled');
+    	$('#icon').removeClass('scrolled');
+    	$('#navSide').removeClass('scrolled');
+    	$('#header').removeClass('scrolled');
+    }
 });
 
 });
