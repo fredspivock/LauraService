@@ -84,6 +84,7 @@ li {
     position: fixed;
     background-color: white;
     z-index: 2000;
+    height: 80px;
 }
 
 
