@@ -1,6 +1,7 @@
 var lauraService = angular.module("lauraServiceApp", [
 	'ngRoute',
 	'lauraServiceControllers'
+	
 	]);
 
 lauraService.config(['$routeProvider', function($routeProvider){
