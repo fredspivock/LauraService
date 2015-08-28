@@ -5,11 +5,11 @@
 <div class="projects">
 	<ul>
 		<li ng-repeat="project in projects">
-			<div class="projectImage">
+			<div class="projectImage image-wrapper">
 				<a href="#/projects/{{ project.id }}"><p class="projectName">{{project.name}}</p>
-				<span class="tinted">
-					<img class="img-responsive tintImage" ng-src="{{ project.imageUrl }}"></a>
-				</span>
+				<div class="tinted">
+					<img class="img-responsive tintImage image" ng-src="{{ project.imageUrl }}"></a>
+				</div>
 			</div>
 		</li>
 	</ul>
