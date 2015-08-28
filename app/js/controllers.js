@@ -12,3 +12,20 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 		});
 
 	}]);
+
+lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routeParams',  
+	function($scope, $http, $routeParams){
+
+		//Getting a individual
+		$http.get('projects/' + $routeParams.id +'.json').success(function(data){
+
+			$scope.projectSingle = data;
+		});
+
+		//For the More Work, gets main list
+		$http.get('projects/homepageProjects.json').success(function(data){
+
+			$scope.projects = data;
+		});
+
+}]);

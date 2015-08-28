@@ -52,7 +52,7 @@ li {
     position: fixed;
     background-color: white;
     z-index: 2000;
-    height: 80px;
+    height: 60px;
 }
 
 /* Nav Bar */
@@ -67,17 +67,19 @@ li {
 .iconSpan {
 
 	position: relative;
-	width: 90%;
+	left: 5%;
+	display: inline-block;
 	margin-left: auto;
-	margin-right: auto;
-	top: 30%;
+	margin-right: auto;;
 	transition: 0.5s ease;
 }
 
 #navSide {
 
-	position: relative;
-	width: 90%;
+	position: absolute;
+	right: 5%;
+	bottom: 0%;
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: right;
@@ -102,21 +104,22 @@ li {
 .scrolled#icon {
 
 	position: absolute;
-	bottom: 0%;
+	bottom: 5%;
 	width: 30px;
 	transition: 0.5s ease;
 }
 
 .scrolled.iconSpan {
-	position: relative;
-	width: 98%;
+	position: absolute;
+	left: 1%;
+	top: 6px;
 	transition: 0.5s ease;
 
 }
 
 .scrolled#navSide {
 
-	width: 90%;
+	right: 5%;
 	margin-left: auto;
 	margin-right: auto;
 	bottom: 15px;

@@ -12,7 +12,8 @@ lauraService.config(['$routeProvider', function($routeProvider){
 
 	}).
 	when('/projects/:id', {
-
+		templateUrl:'partials/project.html',
+		controller:'ProjectCtrl'
 	}).
 	when('/about', {
 

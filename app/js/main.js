@@ -19,6 +19,9 @@ $(document).ready(function(){
 		//cuts the slash from the returned string
 		currentHash = currentHash.slice(1);
 
+		currentHash = currentHash.split('/');
+		currentHash = currentHash[0];
+
 		//underline remover
 		underLineRemover();
 
