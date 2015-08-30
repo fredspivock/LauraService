@@ -6,6 +6,19 @@ var lauraServiceControllers = angular.module('lauraServiceControllers', []);
 //Home page Controller
 lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 	function($scope, $http){
+
+		//makes opaue
+		var  opaqueNav = function(){
+
+			$('#header-wrap').removeClass('clear');
+			$('.navLinksA').removeClass('clear');
+			$('#icon').attr('src', 'img/icon/LauraServiceIcon.gif');
+			$('.navLinksA').css('color', '#707070');
+
+		}
+
+		opaqueNav();
+
 		$http.get('projects/homepageProjects.json').success(function(data){
 
 			$scope.projects = data;
@@ -15,6 +28,19 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routeParams',  
 	function($scope, $http, $routeParams){
+
+
+		//clears a navbar
+		var  clearNav = function(){
+
+			$('#header-wrap').addClass('clear');
+			$('.navLinksA').addClass('clear');
+			$('#icon').attr('src', 'img/icon/icon-white.gif');
+
+		}
+
+		clearNav();
+
 
 		//Getting a individual
 		$http.get('projects/' + $routeParams.id +'.json').success(function(data){
@@ -59,7 +85,8 @@ myHelper.helpers = {
 		//adds link to the name to match the id of the 
 		currentHash = currentHash + "Link";
 		$('#' + currentHash).css("border-bottom", "3px solid #CCFFCC");
-	}
+	},
+
 
 };
 

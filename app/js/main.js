@@ -75,6 +75,11 @@ $(document).ready(function(){
     	$('#icon').addClass('scrolled');
     	$('#navSide').addClass('scrolled');
     	$('#header').addClass('scrolled');
+
+    	//changes the icon to black when scrolled
+    	$('#icon').attr('src', 'img/icon/LauraServiceIcon.gif');
+		$('.navLinksA').css('color', '#707070');
+    	
     }
     else {
     	$('#header-wrap').removeClass('scrolled');
@@ -82,7 +87,17 @@ $(document).ready(function(){
     	$('#icon').removeClass('scrolled');
     	$('#navSide').removeClass('scrolled');
     	$('#header').removeClass('scrolled');
+
+    	//if it is clear nav bar, make it white.
+    	if( $('#header-wrap.clear').length)
+    	{
+    		$('#icon').attr('src', 'img/icon/icon-white.gif');
+    		$('.navLinksA').css('color', 'white');
+
+    	}
     }
+
+    //if scrolled change icon to black
 });
 
 });

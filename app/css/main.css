@@ -53,7 +53,46 @@ li {
     background-color: white;
     z-index: 2000;
     height: 60px;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
 }
+
+/*clear version */
+
+#header-wrap.clear {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0);
+    z-index: 2000;
+    height: 60px;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+
+}
+
+.scrolled.clear#header-wrap {
+  height: 50px;
+  background-color: rgba(255,255,255,1);
+    -webkit-transition: background-color 1200ms linear;
+    -moz-transition: background-color 1200ms linear;
+    -o-transition: background-color 1200ms linear;
+    -ms-transition: background-color 1200ms linear;
+    transition: background-color 1200ms linear;
+
+}
+
+.navLinksA.clear {
+
+	color: white;
+}
+
+
 
 /* Nav Bar */
 
@@ -98,6 +137,7 @@ li {
 
 .scrolled#header-wrap {
   height: 50px;
+  color: rgba(0,0,0,1);
 
 }
 
