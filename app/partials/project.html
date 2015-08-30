@@ -1,0 +1,39 @@
+<div id="projectPage">
+	<img class="img-responsive" src="{{ backgroundImage }}">
+	<div id="title">{{ projectSingle.title }}</div>
+	<span class="accentLine"></span>
+	<div id="companyName">{{ projectSingle.company }}</div>
+	<div id="shareProject"><a>Share</a></div>
+	<div id="year">{{ projectSingle.year }}</div>
+	<span class="accentLine"></span>
+	<div>{{ projectSingle.description }}</div>
+	<div id="sidebar">
+		<ul>
+			<li class="sidebarTitle">Agency</li>
+			<li>{{ projectSingle.sidebar.agency }}</li>
+			<li class="sidebarTitle">Category</li>
+			<li>{{ projectSingle.sidebar.category }}</li>
+			<li class="sidebarTitle">Services</li>
+			<li>{{ projectSingle.sidebar.services }}</li>
+			<li class="sidebarTitle">Recognition</li>
+			<li>{{ projectSingle.sidebar.recognition }}</li>
+			<li class="sidebarTitle">Credits</li>
+			<li>{{ projectSingle.sidebar.credits }}</li>
+
+		</ul>
+	</div>
+
+</div>
+
+<div class="projects">
+	<ul>
+		<li ng-repeat="project in projects">
+			<div class="projectImage image-wrapper">
+				<a href="#/projects/{{ project.id }}"><p class="projectName">{{project.name}}</p>
+				<div class="tinted">
+					<img class="img-responsive tintImage image" ng-src="{{ project.imageUrl }}"></a>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
