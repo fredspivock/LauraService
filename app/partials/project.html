@@ -6,20 +6,20 @@
 		<div id="year">{{ projectSingle.year }}</div>
 		<div id="shareProject"><a>Share</a></div>
 	</div>
-	<div id="contentSection" class="container-fluid">
-		<div id="description" class="col-sm-8">{{ projectSingle.description }}</div>
-		<div id="sidebar" class="col-sm-4">
+	<div id="contentSection" class="containerFlex">
+		<div id="description">{{ projectSingle.description }}</div>
+		<div id="sidebar">
 			<ul>
 				<li class="sidebarTitle">Agency</li>
-				<li>{{ projectSingle.sidebar.agency }}</li>
+				<li class="sidebarInfo">{{ projectSingle.sidebar.agency }}</li>
 				<li class="sidebarTitle">Category</li>
-				<li>{{ projectSingle.sidebar.category }}</li>
+				<li class="sidebarInfo">{{ projectSingle.sidebar.category }}</li>
 				<li class="sidebarTitle">Services</li>
-				<li>{{ projectSingle.sidebar.services }}</li>
+				<li class="sidebarInfo">{{ projectSingle.sidebar.services }}</li>
 				<li class="sidebarTitle">Recognition</li>
-				<li>{{ projectSingle.sidebar.recognition }}</li>
+				<li class="sidebarInfo">{{ projectSingle.sidebar.recognition }}</li>
 				<li class="sidebarTitle">Credits</li>
-				<li>{{ projectSingle.sidebar.credits }}</li>
+				<li class="sidebarInfo">{{ projectSingle.sidebar.credits }}</li>
 
 			</ul>
 		</div>
