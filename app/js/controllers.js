@@ -36,6 +36,7 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 			$('#header-wrap').addClass('clear');
 			$('.navLinksA').addClass('clear');
 			$('#icon').attr('src', 'img/icon/icon-white.gif');
+			$('.navLinksA').css('color', 'white');
 
 		}
 
