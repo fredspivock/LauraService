@@ -306,19 +306,37 @@ img {
    	flex-wrap: nowrap;
 }
 
+
+
+#accentCircle {
+
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	background-color: #8D8DE2;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
 #companyName {
 
-	display: flex;
-	justify-content: center;
-   	align-items: center;
-   	flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
 }
 
 #shareProject {
 	
-	display: flex;
-	justify-content: center;
-   	align-items: center;
+	display: inline-block;
+	position: absolute;
+	right: 5%;
+	padding-top: 10px;
 }
 
 /* SideBar */
@@ -362,6 +380,7 @@ img {
 	order: 1;
 	padding-bottom: 20px;
 	width: 65%;
+	line-height: 2;
 }
 
 

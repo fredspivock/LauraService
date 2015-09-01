@@ -3,11 +3,12 @@
 	<div id="title">{{ projectSingle.title }}</div>
 	<div class="accentLine">
 		<div id="companyName">{{ projectSingle.company }}</div>
+		<div id="accentCircle"></div>
 		<div id="year">{{ projectSingle.year }}</div>
 		<div id="shareProject"><a>Share</a></div>
 	</div>
 	<div id="contentSection" class="containerFlex">
-		<div id="description">{{ projectSingle.description }}</div>
+		<div id="description" ng-bind-html"description"></div>
 		<div id="sidebar">
 			<ul>
 				<li class="sidebarTitle">Agency</li>

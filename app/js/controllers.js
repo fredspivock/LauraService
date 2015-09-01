@@ -47,7 +47,12 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 		$http.get('projects/' + $routeParams.id +'.json').success(function(data){
 
 			$scope.projectSingle = data;
+			$scope.description = data.description;
 		});
+
+
+
+		//$scope.description = $scope.projectSingle.description;
 
 		//For the More Work, gets main list
 		$http.get('projects/homepageProjects.json').success(function(data){
