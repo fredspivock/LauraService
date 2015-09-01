@@ -1,6 +1,6 @@
 /*contollers for Laura Sercice*/
 
-var lauraServiceControllers = angular.module('lauraServiceControllers', []);
+var lauraServiceControllers = angular.module('lauraServiceControllers', ['ngSanitize']);
 
 
 //Home page Controller
@@ -48,6 +48,8 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 			$scope.projectSingle = data;
 			$scope.description = data.description;
+
+			console.log($scope.description);
 		});
 
 
