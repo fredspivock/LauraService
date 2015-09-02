@@ -1,7 +1,7 @@
 
 
 /* links */
-a:link. a:visited, a:hover, a:active {
+a:link, a:visited, a:hover, a:active {
     color: #707070;
     text-decoration: none;
 }
@@ -420,6 +420,18 @@ img {
 
 	width: 45px;
 }
+
+.footerText {
+
+	text-align: center;
+}
+
+ .footerTextItem {
+
+ 	padding: 15px;
+ 	color: #707070;
+ 	font-size: 1em;
+ }
 
 /* too narrow to support 2 columns */
 @media all and (max-width: 640px) {
