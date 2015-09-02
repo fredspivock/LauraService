@@ -312,13 +312,25 @@ img {
   height: 100%;
   text-align: center;
 }
+#shareIcon {
+
+	position: relative;
+	top: 5px;
+	padding: 0px;
+}
+
+#shareLink {
+
+	position: relative;
+	top: 15px;
+}
 
 #shareProject {
 	
 	display: inline-block;
 	position: absolute;
 	right: 5%;
-	padding-top: 10px;
+	height: 45px;
 }
 
 /* SideBar */
@@ -432,6 +444,18 @@ img {
  	color: #707070;
  	font-size: 1em;
  }
+
+#iconList {
+
+	text-align: center;
+}
+
+.icon {
+
+	padding: 20px;
+	color: #B2B2B2;
+}
+
 
 /* too narrow to support 2 columns */
 @media all and (max-width: 640px) {

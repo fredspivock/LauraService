@@ -5,7 +5,9 @@
 		<div id="companyName">{{ projectSingle.company }}</div>
 		<div id="accentCircle"></div>
 		<div id="year">{{ projectSingle.year }}</div>
-		<div id="shareProject"><a>Share</a></div>
+		<div id="shareProject">
+			<i id="shareIcon"class="icon icon-share-alt icon-2x"></i><a id="shareLink">Share</a>
+		</div>
 	</div>
 	<div id="contentSection" class="containerFlex centered">
 		<div id="description" ng-bind-html="description" class="padding-bottom"></div>
