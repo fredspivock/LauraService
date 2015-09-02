@@ -383,6 +383,62 @@ img {
 	line-height: 2;
 }
 
+/* site  mockups on single project page */
+
+#siteMockUps {
+
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mockImage {
+
+	padding-bottom: 20px;
+}
+
+/* project footer */
+
+#projectFooter {
+
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#projectFooterTitle {
+
+	position: relative;
+	top:20px;
+	font-size: 3.5em;
+}
+
+#projectSingleLink {
+
+	padding-top: 10px;
+	text-decoration: underline;
+	color: #4141C7;
+	font-size: 1.2em;
+	position: relative;
+    top: 5px;
+}
+
+#projectSingleBack {
+
+	text-decoration: underline;
+	color: #707070;
+}
+
+#greenArrow {
+
+	position: relative;
+	height: 55px;
+
+	top: 20px;
+	z-index: 3000;
+
+}
+
 
 /* too narrow to support 2 columns */
 @media all and (max-width: 640px) {

@@ -14,9 +14,11 @@
 		"credits" : "Bunch of names"
 	},
 
+	"link" : "www.vaginistas.com",
+
 	"images": {
-		"desktop" : "",
-		"mobile" : ""
+		"desktop" : "img/mercedes/desktop.gif",
+		"mobile" : "img/mercedes/phone.jpg"
 	}
 
 	

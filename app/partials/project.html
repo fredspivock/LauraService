@@ -26,9 +26,19 @@
 		</div>
 	</div>
 
+	<div id="siteMockUps">
+		<img class="img-responsive mockImage" src="{{ projectSingle.images.desktop }}">
+		<img class="img-responsive mockImage" src="{{ projectSingle.images.mobile }}">
+	</div>
+
 </div>
-<div><a>BACK TO TOP</a></div>
-<div>More Work</div>
+<div id="projectFooter">
+	<div><a id="projectSingleBack">BACK TO TOP</a></div>
+	<div><a id="projectSingleLink" href="http://{{ projectSingle.link }}">{{ projectSingle.link }}</a></div>
+	<div id="projectFooterTitle">More Work</div>
+	<img id="greenArrow" src="img/icon/Arrow.gif">
+</div>
+
 <div class="projects">
 	<ul>
 		<li ng-repeat="project in projects">
