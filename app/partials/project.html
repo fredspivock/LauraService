@@ -1,15 +1,15 @@
 <div id="projectPage">
 	<img class="img-responsive" src="{{ projectSingle.backgroundImage }}">
-	<div id="title">{{ projectSingle.title }}</div>
-	<div class="accentLine">
+	<div id="title" class="centered">{{ projectSingle.title }}</div>
+	<div class="accentLine centered">
 		<div id="companyName">{{ projectSingle.company }}</div>
 		<div id="accentCircle"></div>
 		<div id="year">{{ projectSingle.year }}</div>
 		<div id="shareProject"><a>Share</a></div>
 	</div>
-	<div id="contentSection" class="containerFlex">
-		<div id="description" ng-bind-html="description"></div>
-		<div id="sidebar">
+	<div id="contentSection" class="containerFlex centered">
+		<div id="description" ng-bind-html="description" class="padding-bottom"></div>
+		<div id="sidebar" class="padding-bottom">
 			<ul>
 				<li class="sidebarTitle">Agency</li>
 				<li class="sidebarInfo">{{ projectSingle.sidebar.agency }}</li>
@@ -26,9 +26,9 @@
 		</div>
 	</div>
 
-	<div id="siteMockUps">
-		<img class="img-responsive mockImage" src="{{ projectSingle.images.desktop }}">
-		<img class="img-responsive mockImage" src="{{ projectSingle.images.mobile }}">
+	<div class="centered">
+		<img class="img-responsive padding-bottom" src="{{ projectSingle.images.desktop }}">
+		<img class="img-responsive padding-bottom" src="{{ projectSingle.images.mobile }}">
 	</div>
 
 </div>
@@ -39,7 +39,7 @@
 	<img id="greenArrow" src="img/icon/Arrow.gif">
 </div>
 
-<div class="projects">
+<div class="projects centered">
 	<ul>
 		<li ng-repeat="project in projects">
 			<div class="projectImage image-wrapper">

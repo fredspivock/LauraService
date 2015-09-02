@@ -1,29 +1,10 @@
 
 
-/* unvisited link */
-a:link {
+/* links */
+a:link. a:visited, a:hover, a:active {
     color: #707070;
     text-decoration: none;
 }
-
-/* visited link */
-a:visited {
-    color: #707070;
-    text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-    color: #707070;
-    text-decoration: none;
-}
-
-/* selected link */
-a:active {
-    color: #707070;
-    text-decoration: none;
-}
-
 
 ul {
     list-style-type: none;
@@ -175,12 +156,22 @@ li {
 
 /* For the home Page */
 
-.projects {
+.centered {
 
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 
+}
+
+.padding-bottom {
+
+	padding-bottom: 20px;
+}
+
+.padding-top {
+
+	padding-top: 20px;
 }
 
 .projectName {
@@ -248,9 +239,6 @@ img {
 #homepageHead {
 
 	height: 400px;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
 	position: relative;
 }
 
@@ -275,9 +263,6 @@ img {
 #title {
 
 	padding-top: 30px;
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
 	text-align: left;
 	font-size: 3em;
 	padding-bottom: 10px;
@@ -290,9 +275,6 @@ img {
 
 	border-top: 3px solid #CCFFCC;
 	border-bottom: 3px solid #CCFFCC;
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
 	height: 50px;
 	display: flex;
 	flex-wrap: nowrap;
@@ -361,8 +343,6 @@ img {
 
 	padding-top: 20px;
 	display: flex;
-	width: 90%;
-	margin: auto;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
@@ -370,7 +350,6 @@ img {
 #sidebar {
 
 	order: 2;
-	padding-bottom: 20px;
 	width: 25%;
 
 }
@@ -378,23 +357,8 @@ img {
 #description {
 
 	order: 1;
-	padding-bottom: 20px;
 	width: 65%;
 	line-height: 2;
-}
-
-/* site  mockups on single project page */
-
-#siteMockUps {
-
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.mockImage {
-
-	padding-bottom: 20px;
 }
 
 /* project footer */
@@ -439,6 +403,23 @@ img {
 
 }
 
+/* Footer Partial */
+
+#footerAccentLine {
+
+	border-bottom: 3px solid #CCFFCC;
+
+}
+
+#footerIconWrapper {
+
+	width: 10%;
+}
+
+#footerIcon {
+
+	width: 45px;
+}
 
 /* too narrow to support 2 columns */
 @media all and (max-width: 640px) {
@@ -448,7 +429,6 @@ img {
 	#sidebar {
 
 	order: 2;
-	padding-bottom: 20px;
 	width: 100%;
 
 }
@@ -456,7 +436,6 @@ img {
 #description {
 
 	order: 1;
-	padding-bottom: 20px;
 	width: 100%;
 }
 
