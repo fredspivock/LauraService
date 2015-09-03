@@ -1,17 +1,43 @@
 [
     {
-        "id": "mercedes", 
+        "id": "attitude", 
         "imageUrl": "img/homeProjects/test.gif", 
-        "name": "Mercedes-Benz Magazine"
+        "name": "The Altitude Community"
     }, 
+
     {
-        "id": "motorola-xoom", 
+        "id": "mercedes", 
         "imageUrl": "img/homeProjects/test2.jpg", 
-        "name": "shut up malcolm\u2122"
+        "name": "Mercedes-Benz Magazine Canada"
     },
+
     {
-        "id": "test3", 
+        "id": "wings", 
         "imageUrl": "img/homeProjects/test3.jpg", 
-        "name": "NewOne"
+        "name": "Earn Your Wings"
+    },
+
+    {
+        "id": "restaurants", 
+        "imageUrl": "img/homeProjects/test3.jpg", 
+        "name": "Canada’s Best New Restaurants"
+    },
+
+    {
+        "id": "penny", 
+        "imageUrl": "img/homeProjects/test3.jpg", 
+        "name": "Penny Black Media"
+    },
+
+    {
+        "id": "sparksheet", 
+        "imageUrl": "img/homeProjects/test3.jpg", 
+        "name": "Sparksheet"
+    },
+
+    {
+        "id": "airline", 
+        "imageUrl": "img/homeProjects/test3.jpg", 
+        "name": "The Airline Passenger Experience"
     }
 ]

@@ -19,10 +19,14 @@ lauraService.config(['$routeProvider', function($routeProvider){
 	}).
 	when('/about', {
 
+		templateUrl:'partials/about.html',
+		controller:'AboutCtrl'
 
 	}).
 	when('/services', {
 
+		templateUrl:'partials/about.html',
+		controller:'AboutCtrl'
 
 	}).
 	otherwise({

@@ -1,0 +1,41 @@
+<div id="homepageHead" class="centered">
+	<p id="homepageHeadText"><span id="homepageName">I'm Laura Service</span>, a fun-loving design geek obsessed with form &amp; function.</p>
+</div>
+<div>
+	<img class="img-responsive centered">
+</div>
+<div class="accentLine centered">
+		<div id="aboutMe">ABOUT ME</div>
+		<div id="accentCircle"></div>
+		<div id="aboutWork">ABOUT MY WORK</div>
+</div>
+<div id="contentSection" class="containerFlex centered">
+		<div ng-bind-html="about.description" class="padding-bottom contentParagraph"></div>
+		<div id="sidebar" class="padding-bottom">
+			<ul>
+				<li class="sidebarTitle">EMAIL</li>
+				<li class="sidebarInfo">{{ about.sidebar.email }}</li>
+				<li class="sidebarTitle">PHONE</li>
+				<li class="sidebarInfo">{{ about.sidebar.phone }}</li>
+				<li class="sidebarTitle">FOLLOW ME ON</li>
+				<li class="sidebarInfo"></li>
+				<li class="sidebarTitle">INSPIRED BY</li>
+				<li class="sidebarInfo">{{ about.sidebar.inspired }}</li>
+				<li class="sidebarTitle">WHEN I'M NOT WORKING I</li>
+				<li class="sidebarInfo">{{ about.sidebar.notWork }}</li>
+				<li class="sidebarTitle">I LIKE TO READ</li>
+				<li class="sidebarInfo" ng-bind-html="about.sidebar.read"></li>
+				<li class="sidebarTitle">CURATION STATION</li>
+				<li class="sidebarInfo"></li>
+				<li class="sidebarTitle">I WANT TO</li>
+				<li class="sidebarInfo"></li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="title">What I do best</div>
+	<div>
+	</div>
+	<div class="title">I've worked with</div>
+	<div>
+	</div>

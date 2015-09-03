@@ -1,0 +1,25 @@
+{
+	
+	"title": "",
+	"company": "",
+	"year": "",
+	"backgroundImage": "",
+	"description": "",
+
+	"sidebar": {
+		"agency": "",
+		"category" : "",
+		"services" : "",
+		"recognition" : "",
+		"credits" : ""
+	},
+
+	"link" : "",
+
+	"images": {
+		"desktop" : "",
+		"mobile" : ""
+	}
+
+	
+}

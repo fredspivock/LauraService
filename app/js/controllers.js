@@ -104,3 +104,25 @@ lauraServiceControllers.controller('HelperCtrl', ['$scope',
 			$scope.helpers = myHelper.helpers;
 
 	}]);
+
+
+lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', 
+	function($scope, $http){
+
+		//makes opaue
+		var  opaqueNav = function(){
+
+			$('#header-wrap').removeClass('clear');
+			$('.navLinksA').removeClass('clear');
+			$('#icon').attr('src', 'img/icon/LauraServiceIcon.gif');
+			$('.navLinksA').css('color', '#707070');
+
+		}
+
+		opaqueNav();
+
+		$http.get('projects/about.json').success(function(data){
+
+			$scope.about = data;
+		});
+}]);

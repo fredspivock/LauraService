@@ -17,6 +17,11 @@ li {
 
 }
 
+.title {
+
+	font-size: 3em;
+}
+
 
 /* Stuff for the animated nav Bar */
 
@@ -315,14 +320,15 @@ img {
 #shareIcon {
 
 	position: relative;
-	top: 5px;
+	top: 8px;
 	padding: 0px;
+	padding-right: 3px;
 }
 
 #shareLink {
 
 	position: relative;
-	top: 15px;
+	top: 5px;
 }
 
 #shareProject {
@@ -366,7 +372,7 @@ img {
 
 }
 
-#description {
+.contentParagraph {
 
 	order: 1;
 	width: 65%;
@@ -427,7 +433,7 @@ img {
 
 	margin-left: auto;
 	margin-right: auto;
-	width: 10%;
+	text-align: center;
 }
 
 #footerIcon {
