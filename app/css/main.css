@@ -13,7 +13,7 @@ ul {
 } 
 
 li {
-	display:inline;
+	display:inline-flex;
 
 }
 
@@ -458,7 +458,7 @@ img {
 	color: #B2B2B2;
 }
 
- #iconLi {
+ .iconLi {
 
  	display: inline-flex;
  }
