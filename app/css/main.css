@@ -285,16 +285,6 @@ img {
 	flex-wrap: nowrap;
 }
 
-#year {
-
-	display: flex;
-	justify-content: center;
-   	align-items: center;
-   	flex-wrap: nowrap;
-}
-
-
-
 #accentCircle {
 
 	margin-top: 20px;
@@ -309,14 +299,14 @@ img {
   	justify-content: center;
 }
 
-#companyName {
+.accentItem {
 
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   text-align: center;
 }
+
 #shareIcon {
 
 	position: relative;
