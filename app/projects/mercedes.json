@@ -1,20 +1,20 @@
 {
 	
-	"title": "Mercedes-Benz Website",
-	"company": "Mercedes-Benz",
-	"year": "2014-2015",
+	"title": "Mercedes-Benz Magazine Canada",
+	"company": "For Mercedes-Benz Magazine",
+	"year": "2015",
 	"backgroundImage": "img/mercedes/background.jpg",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/><br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	"description": "Canada’s Mercedes-Benz magazine is created by Spafax’s in-house team of editors and designers. The website is the first to be built independently of its German headquarters and features all Canadian-made content. By collaborating with the art director and editor-in-chief, I translated the already beautiful magazine into a custom online reading experience. By designing a sitemap, wireframes, and mockups I was able to elegantly present the varying article types. I also created behavioural guidelines to give the website and navigation a premium feel.",
 
 	"sidebar": {
-		"agency": "hello",
-		"category" : "Social network website",
-		"services" : "UI/UX, art direction, illustration, photo-research, prototyping and user-testing",
-		"recognition" : "Showcased at a Mindshare Canada Huddle",
-		"credits" : "Bunch of names"
+		"agency": "Spafax, Luxury Brands",
+		"category" : "Website",
+		"services" : "UX/UI Design",
+		"recognition" : "",
+		"credits" : "Natasha Mekhail, Celyn Harding-Jones, Guillaume Briere, Christal Agostino, Charles Lim, François Hoang, Lori Morgan, Adrian Kronowetter, Mélisa Discepola, Long Nguyen, Adrian Mellognio, Nancy Kovacs, Renee Morrison, Kristina Velan, and Moses Moore."
 	},
 
-	"link" : "www.vaginistas.com",
+	"link" : "magazine.mercedes-benz.ca",
 
 	"images": {
 		"desktop" : "img/mercedes/desktop.gif",
