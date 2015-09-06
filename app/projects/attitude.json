@@ -1,20 +1,20 @@
 {
 	
-	"title": "",
-	"company": "",
-	"year": "",
+	"title": "The Altitude Community",
+	"company": "For Air Canada",
+	"year": "2014—2015",
 	"backgroundImage": "",
-	"description": "",
+	"description": "The Altitude Community is an exclusive platform where Air Canada’s frequent flyers can share travel tips. Members can make lists of their favourite hotels, bars, restaurants, and sights anywhere in the world or browse recommendations written by other members. The rigorous planning and execution of the beta site took more than a year. I provided direction on the team by aiding with concept development, sketching UI patterns, iterating sitemaps, wireframes and mockups, selecting imagery, designing assets, storyboarding, and usability-testing.",
 
 	"sidebar": {
-		"agency": "",
-		"category" : "",
-		"services" : "",
-		"recognition" : "",
-		"credits" : ""
+		"agency": "Spafax",
+		"category" : "Social network, website.",
+		"services" : "UX/UI, Art Direction, Illustration, Photo Research, Prototyping and User-Testing",
+		"recognition" : "Showcased at a Mindshare Canada Huddle.",
+		"credits" : "Jean-François Légaré, Charles Lim, Arjun Basu, Ilana Weitzman, Andrew Jeglum, Long Nguyen, Mélisa Discepola, Christopher Waldau, François Hoang, Hope Little, and Adrian Mellognio."
 	},
 
-	"link" : "",
+	"link" : "altitude-community.aircanada.com",
 
 	"images": {
 		"desktop" : "",
