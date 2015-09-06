@@ -1,43 +1,43 @@
 [
     {
         "id": "attitude", 
-        "imageUrl": "img/homeProjects/test.gif", 
+        "imageUrl": "img/attitude/Altitude-Community-1.jpg", 
         "name": "The Altitude Community"
     }, 
 
     {
         "id": "mercedes", 
-        "imageUrl": "img/homeProjects/test2.jpg", 
+        "imageUrl": "img/mercedes/Mercedes-Benz-Magazine-1.jpg", 
         "name": "Mercedes-Benz Magazine Canada"
     },
 
     {
         "id": "wings", 
-        "imageUrl": "img/homeProjects/test3.jpg", 
+        "imageUrl": "img/wings/Earn-Your-Wings-1.jpg", 
         "name": "Earn Your Wings"
     },
 
     {
         "id": "restaurants", 
-        "imageUrl": "img/homeProjects/test3.jpg", 
+        "imageUrl": "img/restaurants/Canadas-Best-New-Restaurant-1.jpg", 
         "name": "Canada’s Best New Restaurants"
     },
 
     {
         "id": "penny", 
-        "imageUrl": "img/homeProjects/test3.jpg", 
+        "imageUrl": "img/penny/Penny-Black-Media.jpg", 
         "name": "Penny Black Media"
     },
 
     {
         "id": "sparksheet", 
-        "imageUrl": "img/homeProjects/test3.jpg", 
+        "imageUrl": "img/sparksheet/Sparksheet-Infographic.jpg", 
         "name": "Sparksheet"
     },
 
     {
         "id": "airline", 
-        "imageUrl": "img/homeProjects/test3.jpg", 
+        "imageUrl": "img/sparksheet/Sparksheet-Infographic.jpg", 
         "name": "The Airline Passenger Experience"
     }
 ]

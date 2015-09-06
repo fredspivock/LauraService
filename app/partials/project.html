@@ -28,9 +28,8 @@
 		</div>
 	</div>
 
-	<div class="centered">
-		<img class="img-responsive padding-bottom" src="{{ projectSingle.images.desktop }}">
-		<img class="img-responsive padding-bottom" src="{{ projectSingle.images.mobile }}">
+	<div class="centered" ng-repeat="image in projectSingle.images">
+		<img class="img-responsive padding-bottom" src="{{ image }}">
 	</div>
 
 </div>
