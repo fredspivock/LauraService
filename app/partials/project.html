@@ -1,5 +1,5 @@
 <div id="projectPage">
-	<img class="img-responsive" src="{{ projectSingle.backgroundImage }}">
+	<img class="img-responsive" src="{{ projectSingle.backgroundImage }}" ng-srcset="{{ projectSingle.backgroundImageMid }} 1000w, {{ projectSingle.backgroundImageSm }} 2000w">
 	<div id="title" class="centered">{{ projectSingle.title }}</div>
 	<div class="accentLine centered">
 		<div class="accentItem">{{ projectSingle.company }}</div>
@@ -12,17 +12,9 @@
 	<div id="contentSection" class="containerFlex centered">
 		<div ng-bind-html="description" class="padding-bottom contentParagraph"></div>
 		<div id="sidebar" class="padding-bottom">
-			<ul>
-				<li class="sidebarTitle">Agency</li>
-				<li class="sidebarInfo">{{ projectSingle.sidebar.agency }}</li>
-				<li class="sidebarTitle">Category</li>
-				<li class="sidebarInfo">{{ projectSingle.sidebar.category }}</li>
-				<li class="sidebarTitle">Services</li>
-				<li class="sidebarInfo">{{ projectSingle.sidebar.services }}</li>
-				<li class="sidebarTitle">Recognition</li>
-				<li class="sidebarInfo" ng-bind-html="projectSingle.sidebar.recognition"></li>
-				<li class="sidebarTitle">Credits</li>
-				<li class="sidebarInfo">{{ projectSingle.sidebar.credits }}</li>
+			<ul ng-repeat="(key, item) in projectSingle.sidebar">
+				<li class="sidebarTitle">{{ key }}</li>
+				<li class="sidebarInfo" ng-bind-html="item"></li>
 
 			</ul>
 		</div>

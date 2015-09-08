@@ -7,11 +7,11 @@
 	"description": "",
 
 	"sidebar": {
-		"agency": "",
-		"category" : "",
-		"services" : "",
-		"recognition" : "",
-		"credits" : ""
+		"AGENCY": "",
+		"CATEGORY" : "",
+		"SERVICES" : "",
+		"RECOGNITION" : "",
+		"CREDITS" : ""
 	},
 
 	"link" : "",
