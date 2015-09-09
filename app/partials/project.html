@@ -1,19 +1,19 @@
 <div id="projectPage">
-	<img class="img-responsive" src="{{ projectSingle.backgroundImage }}" ng-srcset="{{ projectSingle.backgroundImageMid }} 1000w, {{ projectSingle.backgroundImageSm }} 2000w">
-	<div id="title" class="centered">{{ projectSingle.title }}</div>
+	<img class="img-responsive" src="{{ projectSingle.backgroundImage }}">
+	<h1 id="title" class="centered">{{ projectSingle.title }}</h1>
 	<div class="accentLine centered">
-		<div class="accentItem">{{ projectSingle.company }}</div>
-		<div id="accentCircle"></div>
-		<div class="accentItem"> {{ projectSingle.year }}</div>
+		<div class="accentItem sansSerif">{{ projectSingle.company }}</div>
+		<div id="accentCircle" ></div>
+		<div class="accentItem sansSerif"> {{ projectSingle.year }}</div>
 		<div id="shareProject">
-			<i id="shareIcon"class="icon icon-share-alt icon-2x"></i><a id="shareLink">Share</a>
+			<i id="shareIcon"class="icon icon-share-alt icon-2x sansSerif"></i><a id="shareLink">Share</a>
 		</div>
 	</div>
 	<div id="contentSection" class="containerFlex centered">
 		<div ng-bind-html="description" class="padding-bottom contentParagraph"></div>
 		<div id="sidebar" class="padding-bottom">
 			<ul ng-repeat="(key, item) in projectSingle.sidebar">
-				<li class="sidebarTitle">{{ key }}</li>
+				<li class="sidebarTitle sansSerif">{{ key }}</li>
 				<li class="sidebarInfo" ng-bind-html="item"></li>
 
 			</ul>
@@ -26,9 +26,9 @@
 
 </div>
 <div id="projectFooter">
-	<div><a id="projectSingleBack">BACK TO TOP</a></div>
+	<div><a id="projectSingleBack" class="sansSerif">BACK TO TOP</a></div>
 	<div><a id="projectSingleLink" href="http://{{ projectSingle.link }}">{{ projectSingle.link }}</a></div>
-	<div id="projectFooterTitle">More Work</div>
+	<h1 id="projectFooterTitle">More Work</h1>
 	<img id="greenArrow" src="img/icon/Arrow.gif">
 </div>
 
@@ -36,7 +36,7 @@
 	<ul>
 		<li ng-repeat="project in projects">
 			<div class="projectImage image-wrapper">
-				<a href="#/projects/{{ project.id }}"><p class="projectName">{{project.name}}</p>
+				<a href="#/projects/{{ project.id }}"><p class="projectName sansSerif">{{project.name}}</p>
 				<div class="tinted">
 					<img class="img-responsive tintImage image" ng-src="{{ project.imageUrl }}"></a>
 				</div>
