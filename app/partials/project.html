@@ -6,7 +6,7 @@
 		<div id="accentCircle" ></div>
 		<div class="accentItem sansSerif"> {{ projectSingle.year }}</div>
 		<div id="shareProject">
-			<i id="shareIcon"class="icon icon-share-alt icon-2x sansSerif"></i><a id="shareLink">Share</a>
+			<img id="shareIcon" class="icon" src="img/icon/share-icon.svg"></img><a id="shareLink" href="">Share</a>
 		</div>
 	</div>
 	<div id="contentSection" class="containerFlex centered">
@@ -38,7 +38,7 @@
 			<div class="projectImage image-wrapper">
 				<a href="#/projects/{{ project.id }}"><p class="projectName sansSerif">{{project.name}}</p>
 				<div class="tinted">
-					<img class="img-responsive tintImage image" ng-src="{{ project.imageUrl }}"></a>
+					<img class="tintImage image" ng-src="{{ project.imageUrl }}"></a>
 				</div>
 			</div>
 		</li>

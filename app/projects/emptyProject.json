@@ -1,0 +1,24 @@
+{
+
+	"title": "",
+	"company": "",
+	"year": "",
+	"backgroundImage": "",
+	"description": "",
+	
+	"sidebar": {
+		"AGENCY": "",
+		"CATEGORY" : "",
+		"SERVICES" : "",
+		"CREDITS" : ""
+	},
+
+	"link" : "",
+
+	"images": {
+		"desktop" : "",
+		"longView" : ""
+	}
+
+	
+}

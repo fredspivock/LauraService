@@ -18,7 +18,8 @@
 	"link" : "magazine.mercedes-benz.ca",
 
 	"images": {
-		"desktop" : "img/mercedes/Mercedes-Benz-Magazine-2-lg.jpg"
+		"desktop" : "img/mercedes/Mercedes-Benz-Magazine-2-lg.jpg",
+		"longView" : "img/mercedes/Mercedes-Benz-Magazine-3.jpg"
 	}
 
 	

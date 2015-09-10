@@ -327,13 +327,15 @@ img {
 	top: 8px;
 	padding: 0px;
 	padding-right: 3px;
+	height: 20px;
 }
 
 #shareLink {
 
 	position: relative;
-	top: 5px;
+	top: 10px;
 	color: #7d79e9;
+	text-decoration: underline;
 }
 
 #shareProject {
@@ -493,5 +495,16 @@ img {
 	order: 1;
 	width: 100%;
 }
+
+/* 1080 desktop screens */
+@media only and (max-width: 1080px) {
+
+	/*  Image Size*/
+
+	.tinted {
+
+		height: 200px;
+
+	}
 
 }
