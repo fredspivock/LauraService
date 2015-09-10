@@ -479,7 +479,7 @@ img {
 
 
 /* too narrow to support 2 columns */
-@media all and (max-width: 640px) {
+@media (max-width: 640px) {
 
 	/*  Single Project Description and sidebar */
 
@@ -496,14 +496,67 @@ img {
 	width: 100%;
 }
 
+
+
+}
+
 /* 1080 desktop screens */
-@media only and (max-width: 1080px) {
+@media (max-width: 1920px) {
 
 	/*  Image Size*/
 
 	.tinted {
 
+		height: 600px;
+		width: 100%;
+
+	}
+
+}
+
+@media (max-width: 1337px) {
+
+	/*  Image Size*/
+
+	.tinted {
+
+		height: 400px;
+		width: 100%;
+
+	}
+
+}
+
+@media (max-width: 900px) {
+
+	/*  Image Size*/
+
+	.tinted {
+
+		height: 300px;
+		width: 100%;
+
+	}
+
+}
+
+@media (max-width: 680px) {
+
+.tinted {
+
 		height: 200px;
+		width: 100%;
+
+	}
+
+}
+
+@media (max-width: 470px) {
+
+.tinted {
+
+		height: 100px;
+		width: 100%;
 
 	}
 
