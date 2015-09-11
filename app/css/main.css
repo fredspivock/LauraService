@@ -514,10 +514,9 @@ img {
 
 	#projectImageWrapper {
 
-		height: 400px;
+		height: 600px;
 		width: 100%;
-		display: block;
-
+		overflow: hidden;
 	}
 
 
@@ -534,6 +533,14 @@ img {
 
 	}
 
+	#projectImageWrapper {
+
+		height: 400px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+
 }
 
 @media (max-width: 900px) {
@@ -547,6 +554,14 @@ img {
 
 	}
 
+	#projectImageWrapper {
+
+		height: 300px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+
 }
 
 @media (max-width: 680px) {
@@ -558,6 +573,13 @@ img {
 
 	}
 
+	#projectImageWrapper {
+
+		height: 200px;
+		width: 100%;
+		overflow: hidden;
+	}
+
 }
 
 @media (max-width: 470px) {
@@ -567,6 +589,13 @@ img {
 		height: 100px;
 		width: 100%;
 
+	}
+
+	#projectImageWrapper {
+
+		height: 100px;
+		width: 100%;
+		overflow: hidden;
 	}
 
 }
