@@ -479,6 +479,98 @@ img {
  }
 
 
+ /*ABOUT PAGE ICONS */
+
+.aboutIconContainer {
+
+	display: block;
+	height: 100%;
+}
+
+.box-fade {
+
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 33%;
+	height: 100%;
+
+}
+
+.iconFadeContainer {
+
+	transition: 0.5s;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.iconFade {
+
+	width: 100%;
+}
+
+.fade-title,
+.fade-description {
+
+	transition: 0.5s;
+	text-align: center;
+
+}
+
+.fade-description {
+
+	opacity: 0;
+}
+
+/*BOX Fade ON HOVER */
+
+.box-fade:hover .fade-description {
+
+	opacity: 1;
+	transform: translate(0, -150px);
+
+
+}
+
+.box-fade:hover .iconFadeContainer {
+
+	opacity: 0;
+	transform: translate(0, -150px);
+}
+
+.box-fade:hover .fade-title {
+
+	transform: translate(0, -150px);
+}
+
+.workedWith {
+
+	padding-top: 50px;
+}
+
+
+/* aboout logos */
+
+.logoContainer {
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo {
+
+	display: flex;
+	width: 25%;
+	height: 100px;
+	padding: 25px;
+}
+
+.logoAccentLine {
+
+	border-bottom: 2px solid #B2B2B2;
+	width: 100%;
+}
+
 /* too narrow to support 2 columns */
 @media (max-width: 640px) {
 
@@ -509,6 +601,19 @@ img {
 
 	}
 
+	.logoContainer {
+
+	display: block;
+}
+
+.logo {
+
+	display: flex;
+	width: 100%;
+	height: 100px;
+	padding: 25px;
+}
+
 
 
 }
@@ -531,6 +636,15 @@ img {
 		width: 100%;
 		overflow: hidden;
 	}
+	.aboutIconContainer {
+
+		height: 300px;
+	}
+
+	.iconFade  {
+
+		height: 300px;
+	}	
 
 
 }
@@ -552,6 +666,7 @@ img {
 		width: 100%;
 		overflow: hidden;
 	}
+
 
 
 }
@@ -577,6 +692,25 @@ img {
 
 }
 
+@media (max-width: 770px) {
+
+	.box-fade {
+		display: block;
+		width:90%;
+	}
+	.aboutIconContainer {
+
+		height: 100%;
+	}
+
+	.iconFade  {
+
+		height: 250px;
+	}	
+
+}
+
+
 @media (max-width: 680px) {
 
 	.tinted {
@@ -593,6 +727,19 @@ img {
 		overflow: hidden;
 	}
 
+	.box-fade {
+		display: block;
+		width:90%;
+	}
+	.aboutIconContainer {
+
+		height: 100%;
+	}
+
+	.iconFade  {
+
+		height: 250px;
+	}	
 
 }
 

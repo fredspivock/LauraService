@@ -11,6 +11,32 @@
 		"read" : "Fast Company<br/>Good Magazine<br/>Smashing Magazine<br/>The Great Discontent<br/>Medium<br/>Flipboard<br/>Wired<br/>The Walrus<br/>The New York Times Online<br/>A List Apart",
 		"curation" : "gimmebar.com/loves/smervice<br/>hypem.com/smervice",
 		"want" : "Go to graduate school<br/>Learn After Effects<br/>Study business<br/>Start a business<br/>Build one of my own ideas"
+	},
+
+	"logos": {
+
+		"row1": {
+				"airCanada": "img/workedWithIcons/Air-Canada.svg",
+				"apex": "img/workedWithIcons/Apex.svg",
+				"cinemaQuebec": "img/workedWithIcons/Cinema-du-Quebec.svg",
+				"enRoute": "img/workedWithIcons/enRoute.svg"
+			},
+
+		"row2": {
+				"filmbank": "img/workedWithIcons/Filmbank.svg",
+				"logistik": "img/workedWithIcons/Logistik.svg",
+				"mercedes": "img/workedWithIcons/Mercedes-Benz-Magazine.svg",
+				"penny": "img/workedWithIcons/Penny-Black-Media.svg"
+			},
+
+		"row3": {
+
+				"spafax": "img/workedWithIcons/Spafax.svg",
+				"sparksheet": "img/workedWithIcons/Sparksheet.svg",
+				"vancouver": "img/workedWithIcons/Vancouver-Island-University.svg",
+				"vista": "img/workedWithIcons/Vista-Jet.svg"
+			}
+
 	}
 
 
