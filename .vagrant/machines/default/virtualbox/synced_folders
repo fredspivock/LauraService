@@ -1,1 +1,0 @@
-{"virtualbox":{"/www/var":{"guestpath":"/www/var","hostpath":"C:/LauraService","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/LauraService","disabled":false},"/var/www":{"guestpath":"/var/www","hostpath":"C:/LauraService","disabled":false}}}
