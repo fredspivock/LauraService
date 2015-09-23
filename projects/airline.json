@@ -1,0 +1,24 @@
+{
+
+	"title": "",
+	"company": "",
+	"year": "",
+	"backgroundImage": "img/airline/APEX-1.jpg",
+	"description": "",
+	
+	"sidebar": {
+		"AGENCY": "",
+		"CATEGORY" : "",
+		"SERVICES" : "",
+		"CREDITS" : ""
+	},
+
+	"link" : "",
+
+	"images": {
+		"desktop" : "",
+		"longView" : ""
+	}
+
+	
+}

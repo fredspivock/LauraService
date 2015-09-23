@@ -1,0 +1,43 @@
+[
+    {
+        "id": "attitude", 
+        "imageUrl": "img/attitude/Altitude-Community-1.jpg", 
+        "name": "The Altitude Community"
+    }, 
+
+    {
+        "id": "mercedes", 
+        "imageUrl": "img/mercedes/Mercedes-Benz-Magazine-lg.jpg", 
+        "name": "Mercedes-Benz Magazine Canada"
+    },
+
+    {
+        "id": "wings", 
+        "imageUrl": "img/wings/Earn-Your-Wings-1.jpg", 
+        "name": "Earn Your Wings"
+    },
+
+    {
+        "id": "restaurants", 
+        "imageUrl": "img/restaurants/Canadas-Best-New-Restaurant-1.jpg", 
+        "name": "Canada’s Best New Restaurants"
+    },
+
+    {
+        "id": "penny", 
+        "imageUrl": "img/penny/Penny-Black-Media.jpg", 
+        "name": "Penny Black Media"
+    },
+
+    {
+        "id": "sparksheet", 
+        "imageUrl": "img/sparksheet/Sparksheet-Infographic.jpg", 
+        "name": "Sparksheet"
+    },
+
+    {
+        "id": "airline", 
+        "imageUrl": "img/airline/APEX-1.jpg", 
+        "name": "The Airline Passenger Experience"
+    }
+]
