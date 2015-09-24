@@ -253,7 +253,7 @@ img {
 
 .tinted {
 	display: block;
-	background: rgba(0, 0, 0, 1)
+	background: rgba(0, 0, 0, 1);
 }
 
 #homepageHead {
@@ -569,6 +569,12 @@ img {
 
 	border-bottom: 2px solid #B2B2B2;
 	width: 100%;
+}
+
+.tintPortrait {
+
+	background: rgba(0, 0, 0, 1);
+	margin-bottom: 20px;
 }
 
 /* too narrow to support 2 columns */

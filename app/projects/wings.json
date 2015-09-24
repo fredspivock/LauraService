@@ -4,7 +4,7 @@
 	"company": "For Air Canada",
 	"year": "2014 (2012, 2013)",
 	"backgroundImage": "img/wings/Earn-Your-Wings-1.jpg",
-	"description": "In its third edition, the award winning Earn Your Wings is a leaderboard-focused competition that offers badges and points for completing tasks. Based on flight travel, users earn Aeroplan miles for flights booked inside the parameters of the promotion. My role oversaw the site redesign, updates to visual assets, and enhancements of the user profile section. By adding stats and facts, participants returned to the site more often and it also increased competition among users. The airline saw an overwhelming 875% ROI and reached 20,000 top-tier flyers.",
+	"description": "In its third edition, the award-winning Earn Your Wings is a leaderboard-focused competition now made exclusively for Air Canada’s Altitude members. The game offers badges and points for completing tasks based on actual flight travel. Participants earn Aeroplan miles for eligible flights booked inside the parameters of the promotion and if a member ends the game in one of the coveted Top 20 spots on the leaderboard, he or she earns an equal share of 10 million Bonus Aeroplan Miles. I’ve been involved with the design of the previous installments so this time my role was to oversee the site redesign. I worked with a designer and illustrator to update visual assets, enhance the user profile and “How to Play” section. We added stats, facts and infographics to engage participants who ended up returning to the site more often than in previous editions. We saw average badges earned increase by 56 percent, and average airport visits per user increase by 12 percent. It amplified competition among users and Air Canada saw an overwhelming 875 percent ROI and reached more than 20,000 top-tier flyers.",
 
 	"sidebar": {
 		"AGENCY": "Spafax",
@@ -17,6 +17,9 @@
 	"link" : "earnyourwings.aircanada.com",
 
 	"images": {
+
+		"phone" : "img/wings/Earn-Your-Wings-2.jpg",
+		"desktop" : "img/wings/Earn-Your-Wings-3.jpg"
 	}
 
 	

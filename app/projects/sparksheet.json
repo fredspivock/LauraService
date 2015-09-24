@@ -1,24 +1,25 @@
 {
 	
-	"title": "",
-	"company": "",
-	"year": "",
-	"backgroundImage": "",
-	"description": "",
+	"title": "Sparksheet",
+	"company": "FOR SPARKSHEET",
+	"year": "2013—2015",
+	"backgroundImage": "img/sparksheet/Sparksheet-Infographic.jpg",
+	"description": "Sparksheet is Spafax’s award-winning multiplatform magazine devoted to exploring the convergence of new media, marketing and content creation. As the designer of Sparksheet I participated in image conceptualization for feature articles and infographics. This role at Spafax let me have fun with design, illustration and animation. Through an informal collaboration with the editor and digital director we would conceptualize ideas for the visuals. With a chosen concept I was able to approach each graphic with confidence that would communicate the gist of an article in a visually compelling way. One of my favourite projects for Sparksheet was an infographic of the 2014 FIFA World Cup Team Brand Index. We wanted to build an image that visualizes which teams have the strongest sports branding. With this information we could compare it to their likelihood of winning the tournament and see if there was any correlation between performance and a sports brand. The idea came from comedian Jerry Seinfeld who said, “You’re actually rooting for the clothes.” We pulled data from key branding influences like, the number of world cup appearances, Google search results, social media popularity, player salaries and even the countries brand (which is why team Australia looks as popular as Brazil). With these numbers I built a simple circle graph with onion-layers relative in size to the collected data. The result, while imperfect, made the trend clear and the big brands were usually winning teams.",
+	
 
 	"sidebar": {
-		"AGENCY": "",
-		"CATEGORY" : "",
-		"SERVICES" : "",
-		"RECOGNITION" : "",
-		"CREDITS" : ""
+		"AGENCY": "Spafax",
+		"SERVICES" : "Visual Design, Illustration, Data Visualization, Animation",
+		"CATEGORY" : "Website, Banners, Infographics, Animation, GIFs",
+		"AWARDS" : "<b>The Eddies, 2014</b><br/>Best Standalone Digital Magazine, B2B:<br/>WINNER (Gold)<br/><br/><b>The Copas, 2014</b><br/>Best Article or Series:<br/>Should Coke Quit its Content Marketing Journey<br/>Best Website Design: 2014 Fifa World Cup Team Brand Index<br/>Best Corporate Website:<br/>WINNER (Gold)",
+		"CREDITS" : "Charles Lim, Sophie Woodrooffe, Dan Levy and Andrew Jeglum"
 	},
 
-	"link" : "",
+	"link" : "http://sparksheet.com/",
 
 	"images": {
-		"desktop" : "",
-		"mobile" : ""
+		"desktop" : "img/sparksheet/Sparksheet-2.jpg",
+		"mobile" : "img/sparksheet/Sparksheet-3.jpg"
 	}
 
 	

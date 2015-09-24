@@ -12,7 +12,7 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 			$('#header-wrap').removeClass('clear');
 			$('.navLinksA').removeClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIcon.gif');
+			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
 			$('.navLinksA').css('color', '#707070');
 
 		}
@@ -35,7 +35,7 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 			$('#header-wrap').addClass('clear');
 			$('.navLinksA').addClass('clear');
-			$('#icon').attr('src', 'img/icon/icon-white.gif');
+			$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
 			$('.navLinksA').css('color', 'white');
 
 		}
@@ -114,7 +114,7 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http',
 
 			$('#header-wrap').removeClass('clear');
 			$('.navLinksA').removeClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIcon.gif');
+			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
 			$('.navLinksA').css('color', '#707070');
 
 		}
