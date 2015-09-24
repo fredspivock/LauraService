@@ -575,6 +575,9 @@ img {
 
 	background: rgba(0, 0, 0, 1);
 	margin-bottom: 20px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* too narrow to support 2 columns */
