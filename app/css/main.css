@@ -25,7 +25,7 @@ ul {
 } 
 
 li {
-	display:inline-flex;
+	display: inline-flex; display: -webkit-inline-flex;
 
 }
 
@@ -467,7 +467,7 @@ img {
 
  .iconLi {
 
- 	display: inline-flex;
+ 	display: inline-flex; display: -webkit-inline-flex;
  }
 
 
@@ -481,7 +481,7 @@ img {
 
 .box-fade {
 
-	display: inline-flex;
+	display: inline-flex; display: -webkit-inline-flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
 	width: 33%;
