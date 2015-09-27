@@ -577,13 +577,33 @@ img {
 	}
 	.aboutIconContainer {
 
-		height: 300px;
+		height: 150px;
 	}
 
 	.iconFade  {
 
-		height: 300px;
-	}	
+		height: 150px;
+	}
+
+	.box-fade:hover .fade-description {
+
+		opacity: 1;
+		transform: translate(0, -115px);
+
+
+	}
+
+	.box-fade:hover .iconFadeContainer {
+
+		opacity: 0;
+		transform: translate(0, -120px);
+	}
+
+	.box-fade:hover .fade-title {
+
+		transform: translate(0, -120px);
+	}
+	
 
 
 }
@@ -631,15 +651,11 @@ img {
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 785px) {
 
 	.box-fade {
 		display: block;
 		width:90%;
-	}
-	.aboutIconContainer {
-
-		height: 100%;
 	}
 
 	.iconFade  {
@@ -651,6 +667,37 @@ img {
 
 		width: 33%;
 	}
+
+
+	.aboutIconContainer {
+
+		height: 600px;
+	}
+
+	.iconFade  {
+
+		height: 150px;
+	}
+
+	.box-fade:hover .fade-description {
+
+		opacity: 1;
+		transform: translate(0, -115px);
+
+
+	}
+
+	.box-fade:hover .iconFadeContainer {
+
+		opacity: 0;
+		transform: translate(0, -120px);
+	}
+
+	.box-fade:hover .fade-title {
+
+		transform: translate(0, -120px);
+	}
+	
 
 }
 
@@ -671,20 +718,6 @@ img {
 		overflow: hidden;
 	}
 
-	.box-fade {
-		display: block;
-		width:90%;
-	}
-
-	.aboutIconContainer {
-
-		height: 100%;
-	}
-
-	.iconFade  {
-
-		height: 250px;
-	}	
 
 	.contentParagraph {
 
@@ -730,19 +763,19 @@ img {
 
 	.logoContainer {
 
-	display: block;
-	font-size: 0px;
-}
+		display: block;
+		font-size: 0px;
+	}
 
-.logo {
-	display: inline-block;
-	width: 50%;
-}
+	.logo {
+		display: inline-block;
+		width: 50%;
+	}
 
-.logoAccentLine {
+	.logoAccentLine {
 
-	height: 50px;
-}
+		height: 50px;
+	}
 
 
 
@@ -768,6 +801,12 @@ img {
 
 		width: 50%;
 	}
+
+	.aboutIconContainer {
+
+		height: 650px;
+	}
+
 
 
 }
