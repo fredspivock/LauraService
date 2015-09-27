@@ -52,7 +52,8 @@
 	<h1 class="title centered workedWith">I've worked with</h1>
 	<div class="padding-top">
 		<div class="logoContainer centered" ng-repeat="(key, row) in about.logos" >
-			<img ng-repeat="logo in row" class="logo" src="{{logo}}"/>
-			<div ng-if="key === 'row1' || key === 'row2'"class="logoAccentLine"></div>
+			<div ng-repeat="logo in row" class="logo">
+				<img  class="logoAccentLine" src="{{logo}}"/>
+			</div>
 		</div>
 	</div>
