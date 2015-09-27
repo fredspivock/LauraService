@@ -286,21 +286,14 @@ img {
 
 	border-top: 3px solid #CCFFCC;
 	border-bottom: 3px solid #CCFFCC;
-	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #accentCircle {
 
-	margin-top: 20px;
-	margin-right: 10px;
-	margin-left: 10px;
-	border-radius: 50%;
-	width: 5px;
-	height: 5px;
-	background-color: #8D8DE2;
+	color: #8D8DE2;
 	display: inline-block;
-  	align-items: center;
-  	justify-content: center;
 }
 
 .accentItem {
@@ -319,8 +312,6 @@ img {
 
 #shareLink {
 
-	position: relative;
-	top: 10px;
 	color: #7d79e9;
 	text-decoration: underline;
 }
