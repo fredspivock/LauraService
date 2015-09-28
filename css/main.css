@@ -25,7 +25,7 @@ ul {
 } 
 
 li {
-	display:inline-flex;
+	display: inline-flex; display: -webkit-inline-flex;
 
 }
 
@@ -79,11 +79,7 @@ h1 {
 .scrolled.clear#header-wrap {
   height: 50px;
   background-color: rgba(255,255,255,1);
-    -webkit-transition: background-color 1200ms linear;
-    -moz-transition: background-color 1200ms linear;
-    -o-transition: background-color 1200ms linear;
-    -ms-transition: background-color 1200ms linear;
-    transition: background-color 1200ms linear;
+  transition: background-color 1200ms linear;
 
 }
 
@@ -178,6 +174,7 @@ h1 {
 .centered {
 
 		width: 90%;
+		max-width: 1170px;
 		margin-left: auto;
 		margin-right: auto;
 
@@ -217,10 +214,6 @@ h1 {
 
 .image-wrapper img  {
 
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all  1s ease;
 
 
@@ -253,7 +246,7 @@ img {
 
 .tinted {
 	display: block;
-	background: rgba(0, 0, 0, 1)
+	background: rgba(0, 0, 0, 1);
 }
 
 #homepageHead {
@@ -293,28 +286,19 @@ img {
 
 	border-top: 3px solid #CCFFCC;
 	border-bottom: 3px solid #CCFFCC;
-	height: 50px;
-	display: flex;
-	flex-wrap: nowrap;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #accentCircle {
 
-	margin-top: 20px;
-	margin-right: 10px;
-	margin-left: 10px;
-	border-radius: 50%;
-	width: 5px;
-	height: 5px;
-	background-color: #8D8DE2;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
+	color: #8D8DE2;
+	display: inline-block;
 }
 
 .accentItem {
 
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -323,17 +307,11 @@ img {
 
 #shareIcon {
 
-	position: relative;
-	top: 8px;
-	padding: 0px;
-	padding-right: 3px;
 	height: 20px;
 }
 
 #shareLink {
 
-	position: relative;
-	top: 10px;
 	color: #7d79e9;
 	text-decoration: underline;
 }
@@ -341,9 +319,7 @@ img {
 #shareProject {
 	
 	display: inline-block;
-	position: absolute;
-	right: 5%;
-	height: 45px;
+	float: right;
 }
 
 /* SideBar */
@@ -475,7 +451,7 @@ img {
 
  .iconLi {
 
- 	display: inline-flex;
+ 	display: inline-flex; display: -webkit-inline-flex;
  }
 
 
@@ -484,16 +460,16 @@ img {
 .aboutIconContainer {
 
 	display: block;
-	height: 100%;
+	height: auto;
 }
 
 .box-fade {
 
-	display: inline-flex;
+	display: inline-flex; display: -webkit-inline-flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
 	width: 33%;
-	height: 100%;
+	height: auto;
 
 }
 
@@ -562,7 +538,6 @@ img {
 	display: flex;
 	width: 25%;
 	height: 100px;
-	padding: 25px;
 }
 
 .logoAccentLine {
@@ -571,52 +546,16 @@ img {
 	width: 100%;
 }
 
-/* too narrow to support 2 columns */
-@media (max-width: 640px) {
+.tintPortrait {
 
-	/*  Single Project Description and sidebar */
-
-	#sidebar {
-
-		order: 2;
-		width: 100%;
-
-	}
-
-	#description {
-
-		order: 1;
-		width: 100%;
-	}
-
-	h1 {
-
-		font-size: 2.5em;
-	}
-
-
-	.projectName  {
-
-		font-size: 1.5em;
-
-	}
-
-	.logoContainer {
-
-	display: block;
-}
-
-.logo {
-
-	display: flex;
-	width: 100%;
-	height: 100px;
-	padding: 25px;
+	background: rgba(0, 0, 0, 1);
+	margin-bottom: 20px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
-
-}
 
 /* 1080 desktop screens */
 @media (max-width: 1920px) {
@@ -638,13 +577,33 @@ img {
 	}
 	.aboutIconContainer {
 
-		height: 300px;
+		height: 150px;
 	}
 
 	.iconFade  {
 
-		height: 300px;
-	}	
+		height: 150px;
+	}
+
+	.box-fade:hover .fade-description {
+
+		opacity: 1;
+		transform: translate(0, -115px);
+
+
+	}
+
+	.box-fade:hover .iconFadeContainer {
+
+		opacity: 0;
+		transform: translate(0, -120px);
+	}
+
+	.box-fade:hover .fade-title {
+
+		transform: translate(0, -120px);
+	}
+	
 
 
 }
@@ -692,21 +651,53 @@ img {
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 785px) {
 
 	.box-fade {
 		display: block;
 		width:90%;
-	}
-	.aboutIconContainer {
-
-		height: 100%;
 	}
 
 	.iconFade  {
 
 		height: 250px;
 	}	
+
+	.logo {
+
+		width: 33%;
+	}
+
+
+	.aboutIconContainer {
+
+		height: 600px;
+	}
+
+	.iconFade  {
+
+		height: 150px;
+	}
+
+	.box-fade:hover .fade-description {
+
+		opacity: 1;
+		transform: translate(0, -115px);
+
+
+	}
+
+	.box-fade:hover .iconFadeContainer {
+
+		opacity: 0;
+		transform: translate(0, -120px);
+	}
+
+	.box-fade:hover .fade-title {
+
+		transform: translate(0, -120px);
+	}
+	
 
 }
 
@@ -727,19 +718,66 @@ img {
 		overflow: hidden;
 	}
 
-	.box-fade {
+
+	.contentParagraph {
+
+		width: auto;
+	}
+
+	.logo {
+
+		width: 33%;
+	}
+
+}
+
+/* too narrow to support 2 columns */
+@media (max-width: 655px) {
+
+	/*  Single Project Description and sidebar */
+
+	#sidebar {
+
+		order: 2;
+		width: 100%;
+
+	}
+
+	#description {
+
+		order: 1;
+		width: 100%;
+	}
+
+	h1 {
+
+		font-size: 2.5em;
+	}
+
+
+	.projectName  {
+
+		font-size: 1.5em;
+
+	}
+
+	.logoContainer {
+
 		display: block;
-		width:90%;
-	}
-	.aboutIconContainer {
-
-		height: 100%;
+		font-size: 0px;
 	}
 
-	.iconFade  {
+	.logo {
+		display: inline-block;
+		width: 50%;
+	}
 
-		height: 250px;
-	}	
+	.logoAccentLine {
+
+		height: 50px;
+	}
+
+
 
 }
 
@@ -758,6 +796,17 @@ img {
 		width: 100%;
 		overflow: hidden;
 	}
+
+	.logo {
+
+		width: 50%;
+	}
+
+	.aboutIconContainer {
+
+		height: 650px;
+	}
+
 
 
 }

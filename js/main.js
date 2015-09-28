@@ -77,7 +77,7 @@ $(document).ready(function(){
     	$('#header').addClass('scrolled');
 
     	//changes the icon to black when scrolled
-    	$('#icon').attr('src', 'img/icon/LauraServiceIcon.gif');
+    	$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
 		$('.navLinksA').css('color', '#707070');
     	
     }
@@ -91,7 +91,7 @@ $(document).ready(function(){
     	//if it is clear nav bar, make it white.
     	if( $('#header-wrap.clear').length)
     	{
-    		$('#icon').attr('src', 'img/icon/icon-white.gif');
+    		$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
     		$('.navLinksA').css('color', 'white');
 
     	}
