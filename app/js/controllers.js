@@ -49,7 +49,6 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 			$scope.projectSingle = data;
 			$scope.description = data.description;
 
-			console.log($scope.description);
 		});
 
 

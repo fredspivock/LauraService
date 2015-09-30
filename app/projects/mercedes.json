@@ -3,9 +3,8 @@
 	"title": "Mercedes-Benz Website",
 	"company": "Mercedes-Benz",
 	"year": "2014-2015",
-	"backgroundImage": "img/mercedes/Mercedes-Benz-Magazine-lg.jpg",
-	"backgroundImageMid": "img/mercedes/Mercedes-Benz-Magazine-mid.jpg",
-	"backgroundImageSm": "img/mercedes/Mercedes-Benz-Magazine-sm.jpg",
+	"backgroundImage": "img/mercedes/Normal-Mercedes-Benz-Magazine-1.jpg",
+	"backgroundImage2x": "img/mercedes/2x-Mercedes-Benz-Magazine-1.jpg",
 	"description": "Mercedes-Benz has been providing an outstanding ownership experience for more than 55 years. Mercedes-Benz Magazines is published in more than 40 languages and is distributed around the world. The Canadian edition is created in French and English by Spafax’s Luxury Brands department, an in-house team of editors, writers and designers. The magazine has bold and engaging features presenting intriguing design, technology, travel and Mercedes-Benz vehicles for owners across the country. The website is the first to be built independently of its German headquarters and features all Canadian-made editorial content. By collaborating with the art director and editor-in-chief, I translated the beautiful magazine into a custom online reading experience. Through designing a sitemap, wireframes, behavioural guidelines and mockups I was able to elegantly present the varying article types and give the website a premium feel.",
 	
 	"sidebar": {
@@ -18,8 +17,17 @@
 	"link" : "magazine.mercedes-benz.ca",
 
 	"images": {
-		"desktop" : "img/mercedes/Mercedes-Benz-Magazine-2-lg.jpg",
-		"longView" : "img/mercedes/Mercedes-Benz-Magazine-3.jpg"
+		"desktop" : {
+
+				"img1x" : "img/mercedes/Normal-Mercedes-Benz-Magazine-2.jpg",
+				"img2x" : "img/mercedes/2x-Mercedes-Benz-Magazine-2.jpg"
+
+			},
+		"longView" : {
+				"img1x" : "img/mercedes/Normal-Mercedes-Benz-Magazine-3.jpg",
+				"img2x" : "img/mercedes/2x-Mercedes-Benz-Magazine-3.jpg"
+
+		}
 	}
 
 	
