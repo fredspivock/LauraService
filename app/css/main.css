@@ -343,21 +343,21 @@ img {
 .containerFlex {
 
 	padding-top: 20px;
-	display: flex;
+	display: -webkit-flex; display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: wrap; -webkit-flex-wrap: wrap;
 }
 
 #sidebar {
 
-	order: 2;
+	order: 2; -webkit-order: 2;
 	width: 25%;
 
 }
 
 .contentParagraph {
 
-	order: 1;
+	order: 1; -webkit-order: 1;
 	width: 65%;
 	line-height: 2;
 	font-size: 1.2em;
@@ -465,7 +465,7 @@ img {
 .box-fade {
 
 	display: inline-flex; display: -webkit-inline-flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; -webkit-flex-wrap: wrap;
 	margin: 0 auto;
 	width: 33%;
 	height: auto;
@@ -803,14 +803,14 @@ img {
 
 	#sidebar {
 
-		order: 2;
+		order: 2; -webkit-order:2;
 		width: 100%;
 
 	}
 
 	#description {
 
-		order: 1;
+		order: 1; -webkit-order: 1;
 		width: 100%;
 	}
 
