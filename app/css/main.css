@@ -642,6 +642,8 @@ img {
 
 		opacity: 1;
 		transform: translate(0, -115px);
+		-webkit-transform: translate(0, -115px);
+		-ms-transform: translate(0, -115px);
 
 
 	}
@@ -650,11 +652,15 @@ img {
 
 		opacity: 0;
 		transform: translate(0, -120px);
+		-webkit-transform: translate(0, -120px);
+		-ms-transform: translate(0, -120px);
 	}
 
 	.box-fade:hover .fade-title {
 
 		transform: translate(0, -120px);
+		-ms-transform: translate(0, -120px);
+		-webkit-transform: translate(0, -120px);
 	}
 	
 
@@ -727,29 +733,6 @@ img {
 		height: 600px;
 	}
 
-	.iconFade  {
-
-		height: 150px;
-	}
-
-	.box-fade:hover .fade-description {
-
-		opacity: 1;
-		transform: translate(0, -115px);
-
-
-	}
-
-	.box-fade:hover .iconFadeContainer {
-
-		opacity: 0;
-		transform: translate(0, -120px);
-	}
-
-	.box-fade:hover .fade-title {
-
-		transform: translate(0, -120px);
-	}
 
 	.clients-item {width: 33.3%;}
 	.clients-item.cinema-du-quebec {-webkit-justify-content: flex-end; justify-content: flex-end;}
