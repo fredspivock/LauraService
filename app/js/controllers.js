@@ -17,12 +17,25 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 		}
 
+		var setHeaderSpaceHome = function () {
+
+
+        	var winHeight = $(window).height();
+
+        	winHeight = .95 * winHeight;
+
+	        $("#homepageHead").css("height", winHeight + "px" );
+
+		}
+
 		opaqueNav();
+		setHeaderSpaceHome();
 
 		$http.get('projects/homepageProjects.json').success(function(data){
 
 			$scope.projects = data;
 		});
+
 
 	}]);
 
@@ -95,7 +108,10 @@ myHelper.helpers = {
 	},
 
 
-};
+	};
+
+
+//};
 
 lauraServiceControllers.controller('HelperCtrl', ['$scope', 
 	function($scope){
@@ -118,10 +134,24 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http',
 
 		}
 
+		var setHeaderSpaceAbout = function () {
+
+
+        	var winHeight = $(window).height();
+
+        	winHeight = .95 * winHeight;
+
+	        $("#homepageHead").css("height", winHeight + "px" );
+
+		}
+
 		opaqueNav();
+
+		setHeaderSpaceAbout();
 
 		$http.get('projects/about.json').success(function(data){
 
 			$scope.about = data;
 		});
+
 }]);

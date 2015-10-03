@@ -3,7 +3,7 @@ $(document).ready(function(){
 	//run underline one page load
 	underLineCurrent();
 
-
+    setHeadSpace();
 
 	//switches underlined link on url change
 	$(window).on('hashchange', function(e){
@@ -99,5 +99,32 @@ $(document).ready(function(){
 
     //if scrolled change icon to black
 });
+
+    
+    //determines height of header and sets an appropriate head size
+
+    function setHeadSpace(){
+
+        var winHeight = $(window).height();
+
+        console.log(winHeight);
+
+        winHeight = .95 * winHeight;
+
+        $("#homepageHead").css("height", winHeight + "px" );
+
+    }
+
+
+    $(window).resize( function(){
+
+        setHeadSpace();
+
+    }
+
+
+
+    );
+
 
 });
