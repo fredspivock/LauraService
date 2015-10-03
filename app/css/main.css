@@ -689,6 +689,50 @@ img {
 
 }
 
+/* about icons go vertical */
+
+@media (max-width: 945px){
+
+	.fade-description {
+
+		position: absolute;
+		text-align: center;
+		display: block;
+		left: 0;
+		right: 0;
+		width: 60%;
+		margin: 0 auto;
+
+
+	}
+
+	.aboutIconContainer {
+
+		display: block;
+		width: 60%;
+		height: auto;
+		
+	}
+
+	.iconFadeContainer{
+
+		height: auto;
+	}
+
+	.box-fade {
+		display: block;
+		width:70%;
+	}
+
+	.iconFade  {
+
+		height: 250px;
+	}
+
+
+}
+
+
 @media (max-width: 900px) {
 
 	/*  Image Size*/
@@ -708,30 +752,19 @@ img {
 	}
 
 
+
+
 }
 
 @media (max-width: 785px) {
 
-	.box-fade {
-		display: block;
-		width:90%;
-	}
-
-	.iconFade  {
-
-		height: 250px;
-	}	
+	
 
 	.logo {
 
 		width: 33%;
 	}
 
-
-	.aboutIconContainer {
-
-		height: 600px;
-	}
 
 
 	.clients-item {width: 33.3%;}
@@ -765,6 +798,7 @@ img {
 		display: none;
 	
 	}
+
 
 }
 
@@ -869,10 +903,6 @@ img {
 		width: 50%;
 	}
 
-	.aboutIconContainer {
-
-		height: 650px;
-	}
 
 	.clients-item {width: auto;}
 	.clients-item.air-canada {padding-left: 0; width: 65%;}
