@@ -1,8 +1,8 @@
 [
     {
         "id": "attitude", 
-        "imageUrl": "img/attitude/2x-Altitude-Community-1.jpg",
-        "imageUrl2x": "img/attitude/Normal-Altitude-Community-1.jpg", 
+        "imageUrl": "img/attitude/Normal-Altitude-Community-1.jpg",
+        "imageUrl2x": "img/attitude/2x-Altitude-Community-1.jpg", 
         "name": "The Altitude Community"
     }, 
 
