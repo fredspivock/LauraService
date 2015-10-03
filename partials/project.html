@@ -1,5 +1,5 @@
 <div id="projectPage">
-	<div id="projectImageWrapper"><img class="img-responsive" src="{{ projectSingle.backgroundImage }}"></div>
+	<div id="projectImageWrapper"><img class="img-responsive" src="{{ projectSingle.backgroundImage }}" ng-srcset="{{ projectSingle.backgroundImage2x }} 2x, {{ projectSingle.backgroundImage }} 1x"></div>
 	<h1 id="title" class="centered">{{ projectSingle.title }}</h1>
 	<div class="accentLine centered">
 		<div class="accentItem sansSerif">{{ projectSingle.company }}</div>
@@ -21,7 +21,7 @@
 	</div>
 
 	<div class="centered" ng-repeat="image in projectSingle.images">
-		<img class="img-responsive padding-bottom" src="{{ image }}">
+		<img class="img-responsive padding-bottom" src="{{ image.img1x }}" ng-srcset="{{ image.img1x}} 1x, {{image.img2x}} 2x">
 	</div>
 
 </div>
@@ -38,7 +38,7 @@
 			<div class="projectImage image-wrapper">
 				<a href="#/projects/{{ project.id }}"><p class="projectName sansSerif">{{project.name}}</p>
 				<div class="tinted">
-					<img class="tintImage img-responsive image" ng-src="{{ project.imageUrl }}"></a>
+					<img class="tintImage img-responsive image" src="{{ project.imageUrl }}" ng-srcset="{{ project.imageUrl }} 1x, {{ project.imageUrl2x }} 2x"></a>
 				</div>
 			</div>
 		</li>

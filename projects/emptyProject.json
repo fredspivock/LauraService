@@ -4,6 +4,7 @@
 	"company": "",
 	"year": "",
 	"backgroundImage": "",
+	"backgroundImage2x": "",
 	"description": "",
 	
 	"sidebar": {
@@ -16,8 +17,19 @@
 	"link" : "",
 
 	"images": {
-		"desktop" : "",
-		"longView" : ""
+		"desktop" : {
+
+			"img1x" : "",
+			"img2x" : ""
+
+		},
+			
+		"longView" : {
+
+			"img1x" : "",
+			"img2x" : ""
+
+		}
 	}
 
 	
