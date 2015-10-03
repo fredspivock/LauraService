@@ -433,6 +433,7 @@ img {
  	padding: 15px;
  	color: #707070;
  	font-size: 1em;
+	display: inline-flex; display: -webkit-inline-flex;
  }
 
 #iconList {
