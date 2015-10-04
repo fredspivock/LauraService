@@ -557,6 +557,7 @@ img {
 
 }
 .clients-item.air-canada {-webkit-justify-content: flex-start; justify-content: flex-start;}
+.clients-item.air-canada img {padding-top: 20px;}
 .clients-item.apex img {width: 40%;}
 .clients-item.cinema-du-quebec img {width: 55%;}
 .clients-item.enroute {-webkit-justify-content: flex-end; justify-content: flex-end;}
@@ -569,10 +570,10 @@ img {
 .clients-item.penny-black-media img {width: 75%;}
 .clients-item.spafax {-webkit-justify-content: flex-start; justify-content: flex-start;}
 .clients-item.spafax img {width: 55%;}
-.clients-item.sparksheet img {width: 80%;}
-.clients-item.vancouver-island-university img {width: 100%;}
+.clients-item.sparksheet img {width: 80%; padding-top: 20px}
+.clients-item.vancouver-island-university img {width: 100%; padding-top: 20px;}
 .clients-item.vista-jet {-webkit-justify-content: flex-end; justify-content: flex-end;}
-.clients-item.vista-jet img {width: 80%;}
+.clients-item.vista-jet img {width: 80%; padding-top: 10px;}
 
 
 
@@ -689,6 +690,7 @@ img {
 
 }
 
+
 @media (max-width: 900px) {
 
 	/*  Image Size*/
@@ -708,30 +710,21 @@ img {
 	}
 
 
+
+
+
+
 }
 
 @media (max-width: 785px) {
 
-	.box-fade {
-		display: block;
-		width:90%;
-	}
-
-	.iconFade  {
-
-		height: 250px;
-	}	
+	
 
 	.logo {
 
 		width: 33%;
 	}
 
-
-	.aboutIconContainer {
-
-		height: 600px;
-	}
 
 
 	.clients-item {width: 33.3%;}
@@ -765,6 +758,44 @@ img {
 		display: none;
 	
 	}
+
+
+	.fade-description {
+
+		position: absolute;
+		text-align: center;
+		display: block;
+		left: 0;
+		right: 0;
+		width: 60%;
+		margin: 0 auto;
+
+
+	}
+
+	.aboutIconContainer {
+
+		display: block;
+		width: 40%;
+		height: auto;
+		
+	}
+
+	.iconFadeContainer{
+
+		height: auto;
+	}
+
+	.box-fade {
+		display: block;
+		width:70%;
+	}
+
+	.iconFade  {
+
+		height: 250px;
+	}
+
 
 }
 
@@ -844,6 +875,11 @@ img {
 		height: 50px;
 	}
 
+	.aboutIconContainer {
+
+		width: 50%;
+	}
+
 
 
 }
@@ -869,15 +905,11 @@ img {
 		width: 50%;
 	}
 
-	.aboutIconContainer {
-
-		height: 650px;
-	}
 
 	.clients-item {width: auto;}
-	.clients-item.air-canada {padding-left: 0; width: 65%;}
-	.clients-item.apex {padding-right: 0; width: 35%;}
-	.clients-item.cinema-du-quebec {padding-left: 0; width: 50%;}
+	.clients-item.air-canada {padding-left: 0; padding-right: 0; width: 55%;}
+	.clients-item.apex { width: 45%; padding-bottom: 0}
+	.clients-item.cinema-du-quebec {padding-left: 0; width: 35%;}
 	.clients-item.enroute {padding-right: 0; width: 50%;}
 	.clients-item.filmbank {padding-left: 0; width: 50%;}
 	.clients-item.logistik {padding-right: 0; width: 50%;}
@@ -895,7 +927,7 @@ img {
 	.clients-item.mercedes-benz img,
 	.clients-item.penny-black-media img,
 	.clients-item.spafax img,
-	.clients-item.sparksheet img,
+	.clients-item.sparksheet img { padding-top: 20px;},
 	.clients-item.vancouver-island-university img,
 	.clients-item.vista-jet img {width: 100%;}
 
@@ -920,6 +952,12 @@ img {
 		width: 100%;
 		display: inline;
 	}
+
+	.aboutIconContainer {
+
+		width: 60%;
+	}
+
 
 
 }
