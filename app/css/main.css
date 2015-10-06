@@ -458,16 +458,18 @@ img {
 
 .aboutIconContainer {
 
-	display: block;
 	height: auto;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .box-fade {
 
-	display: inline-flex; display: -webkit-inline-flex;
-	flex-wrap: wrap; -webkit-flex-wrap: wrap;
+	display: inline-block;
+	/*display: inline-flex; display: -webkit-inline-flex;
+	flex-wrap: wrap; -webkit-flex-wrap: wrap; */
 	margin: 0 auto;
-	width: 33%;
+	width: 32%;
 	height: auto;
 
 }
@@ -481,7 +483,7 @@ img {
 
 .iconFade {
 
-	width: 100%;
+	width: 99%;
 }
 
 .fade-title,
@@ -489,6 +491,8 @@ img {
 
 	transition: 0.5s;
 	text-align: center;
+	width: 95%;
+	margin: 0 auto;
 
 }
 
@@ -528,6 +532,23 @@ img {
 
 	padding-top: 50px;
 }
+
+
+.iconFadeBottomText {
+
+
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+.accentLineIcon {
+
+	
+	border-left: 1px solid grey;
+	width: 1%;
+	height: 30%;
+	display: inline-block;}
+
 
 
 /* about logos */
@@ -573,7 +594,7 @@ img {
 .clients-item.sparksheet img {width: 80%; padding-top: 20px}
 .clients-item.vancouver-island-university img {width: 100%; padding-top: 20px;}
 .clients-item.vista-jet {-webkit-justify-content: flex-end; justify-content: flex-end;}
-.clients-item.vista-jet img {width: 80%; padding-top: 20px;}
+.clients-item.vista-jet img {width: 80%; padding-top: 10px;}
 
 
 
@@ -759,42 +780,19 @@ img {
 	
 	}
 
-
-	.fade-description {
-
-		position: absolute;
-		text-align: center;
-		display: block;
-		left: 0;
-		right: 0;
-		width: 60%;
-		margin: 0 auto;
-
-
-	}
+	/* What I do best icons */
 
 	.aboutIconContainer {
 
-		display: block;
-		width: 40%;
-		height: auto;
-		
+		height: 150px;
 	}
 
-	.iconFadeContainer{
+	.iconFade {
 
-		height: auto;
+		width: 100%;
 	}
 
-	.box-fade {
-		display: block;
-		width:70%;
-	}
 
-	.iconFade  {
-
-		height: 250px;
-	}
 
 
 }
@@ -875,11 +873,6 @@ img {
 		height: 50px;
 	}
 
-	.aboutIconContainer {
-
-		width: 50%;
-	}
-
 
 
 }
@@ -956,6 +949,42 @@ img {
 	.aboutIconContainer {
 
 		width: 60%;
+	}
+
+	.fade-description {
+
+		position: absolute;
+		text-align: center;
+		display: block;
+		left: 0;
+		right: 0;
+		width: 60%;
+		margin: 0 auto;
+
+
+	}
+
+	.aboutIconContainer {
+
+		display: block;
+		width: 40%;
+		height: auto;
+		
+	}
+
+	.iconFadeContainer{
+
+		height: auto;
+	}
+
+	.box-fade {
+		display: block;
+		width:70%;
+	}
+
+	.iconFade  {
+
+		height: 250px;
 	}
 
 
