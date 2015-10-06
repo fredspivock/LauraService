@@ -576,6 +576,8 @@ img {
 }
 .clients-list img {max-width: 100%;}
 .clients-item {
+	display: -webkit-flex;
+	display: flex;
 	-webkit-justify-content: center; 
 	justify-content: center; 
 	padding: 10px; 
@@ -908,15 +910,15 @@ img {
 
 	.clients-item {width: auto;}
 	.clients-item.air-canada {padding-left: 0; padding-right: 0; width: 55%;}
-	.clients-item.apex { width: 45%; padding-bottom: 0}
-	.clients-item.cinema-du-quebec {padding-left: 0; width: 35%;}
+	.clients-item.apex {-webkit-justify-content: flex-end; justify-content: flex-end; width: 45%; padding-bottom: 0}
+	.clients-item.cinema-du-quebec {-webkit-justify-content: flex-start; justify-content: flex-start; padding-left: 0; width: 35%;}
 	.clients-item.enroute {padding-right: 0; width: 50%;}
 	.clients-item.filmbank {padding-left: 0; width: 50%;}
 	.clients-item.logistik {padding-right: 0; width: 50%;}
 	.clients-item.mercedes-benz {padding-left: 0; width: 55%;}
-	.clients-item.penny-black-media {padding-right: 0; width: 45%;}
-	.clients-item.spafax {padding-left: 0; width: 40%;}
-	.clients-item.sparksheet {padding-right: 0; width: 50%;}
+	.clients-item.penny-black-media {-webkit-justify-content: flex-end; justify-content: flex-end; padding-right: 0; width: 45%;}
+	.clients-item.spafax {-webkit-justify-content: flex-start; justify-content: flex-start; padding-left: 0; width: 40%;}
+	.clients-item.sparksheet {-webkit-justify-content: flex-end; justify-content: flex-end; padding-right: 0; width: 50%;}
 	.clients-item.vancouver-island-university {padding-left: 0; width: 60%;}
 	.clients-item.vista-jet {padding-right: 0; width: 35%;}
 	.clients-item.apex img,
