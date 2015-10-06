@@ -9,12 +9,13 @@
 .sansSerif {
 
 	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
 
 }
 
 /* links */
 a:link, a:visited, a:hover, a:active {
-    color: #707070;
+    color: #252525;
     text-decoration: none;
 }
 
@@ -31,7 +32,7 @@ li {
 h1 {
 
 	font-size: 3.5em;
-	color: #4f4c4d;
+	color: #252525;
 	
 }
 
@@ -301,7 +302,8 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #808080;
+  color: #252525;
+  text-transform: uppercase;
 }
 
 #shareIcon {
@@ -326,7 +328,7 @@ img {
 .sidebarTitle {
 
 	display: block;
-	font-weight: bold;
+	font-weight: 300;
 	font-size: 1em;
 	text-transform: uppercase;
 
@@ -336,6 +338,7 @@ img {
 
 	padding-bottom: 10px;
 	display: block;
+	color: #808080;
 }
 
 
@@ -361,6 +364,7 @@ img {
 	width: 65%;
 	line-height: 2;
 	font-size: 1.2em;
+	color: #808080;
 }
 
 /* project footer */
@@ -547,8 +551,10 @@ img {
 	
 	border-left: 1px solid grey;
 	width: 1%;
-	height: 30%;
-	display: inline-block;}
+	height: 150px;
+	display: inline-block;
+	position: absolute;
+}
 
 
 
