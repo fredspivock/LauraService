@@ -503,8 +503,9 @@ img {
 }
 
 .fade-description {
-
 	opacity: 0;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /*BOX Fade ON HOVER */
@@ -552,7 +553,7 @@ img {
 	
 	border-left: 1px solid grey;
 	width: 1%;
-	height: 150px;
+	height: 210px;
 	display: inline-block;
 	position: absolute;
 }
@@ -740,7 +741,7 @@ img {
 		overflow: hidden;
 	}
 
-
+	.accentLineIcon {height: 260px;}
 
 
 
@@ -834,6 +835,9 @@ img {
 
 		width: 33%;
 	}
+
+	.accentLineIcon {height: 320px;}
+	.workedWith {padding-top: 150px;}
 
 }
 
