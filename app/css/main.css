@@ -132,6 +132,7 @@ h1 {
 .scrolled#header-wrap {
   height: 50px;
   color: rgba(0,0,0,1);
+  box-shadow: 10px 10px 5px rgba(160, 160, 160, 0.4);
 
 }
 
@@ -282,8 +283,8 @@ img {
 
 .accentLine {
 
-	border-top: 3px solid #CCFFCC;
-	border-bottom: 3px solid #CCFFCC;
+	border-top: 1px solid #59ff89;
+	border-bottom: 1px solid #59ff89;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -407,7 +408,7 @@ img {
 
 #footerAccentLine {
 
-	border-bottom: 3px solid #CCFFCC;
+	border-bottom: 1px solid #59ff89;
 
 }
 
@@ -610,14 +611,14 @@ img {
 
 .clients-underline4 {
 
-	border-bottom: 2px solid #707070;
+	border-bottom: 1px solid#252525;
 	width: 100%;
 	display: inline;
 }
 
 .clients-underline3 {
 
-	border-bottom: 2px solid #707070;
+	border-bottom: 1px solid #252525;
 	width: 100%;
 	display: none;
 }
@@ -625,7 +626,7 @@ img {
 
 .clients-underline2 {
 
-	border-bottom: 2px solid #707070;
+	border-bottom: 1px solid #252525;
 	width: 100%;
 	display: none;
 }
