@@ -107,8 +107,6 @@ $(document).ready(function(){
 
         var winHeight = $(window).height();
 
-        console.log(winHeight);
-
         winHeight = .95 * winHeight;
 
         $("#homepageHead").css("height", winHeight + "px" );
