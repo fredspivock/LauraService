@@ -68,7 +68,7 @@ $(document).ready(function(){
     previousScroll = currentScroll;
 
     //Adds Scrolled class to nav when moved
-    if(Math.round($(window).scrollTop()) > 100) {
+    if(Math.round($(window).scrollTop()) > 120) {
 
     	$('#header-wrap').addClass('scrolled');
     	$('.iconSpan').addClass('scrolled');
@@ -123,6 +123,23 @@ $(document).ready(function(){
 
 
     );
+
+    //Scroll to location
+    function toLocation(clickedLink){
+
+        $('html, body').animate({
+            scrollTop: $("#" + clickedLink).offset().top
+        }, 2000);
+
+    }
+
+    //returns current hash + link
+    function returnHashLink() {
+
+        var currentHash = location.hash.substring(1);
+        return currentHash = currentHash + "Link";
+    }
+
 
 
 });
