@@ -1,6 +1,6 @@
 $(document).ready(function(){	
 
-	//run underline one page load
+	//run underline on page load
 	underLineCurrent();
 
     setHeadSpace();
@@ -9,6 +9,16 @@ $(document).ready(function(){
 	$(window).on('hashchange', function(e){
 
 		underLineCurrent();
+
+
+        //if services clicked, scroll down
+        if($("#servicesLink").hasClass("active")){
+
+            $("body").animate({
+
+                scrollTop: $("#servicesSection").offset().top
+            }, 2000);
+        }
 	});
 
 	//check for Location hash and underline link
@@ -27,7 +37,7 @@ $(document).ready(function(){
 
 		//adds link to the name to match the id of the 
 		currentHash = currentHash + "Link";
-		$('#' + currentHash).css("border-bottom", "1px solid #59ff89");
+		$('#' + currentHash).css("border-bottom", "1px solid #59ff89").addClass("active");
 
 	}
 
@@ -41,7 +51,7 @@ $(document).ready(function(){
 		for(var i = 0; i < listOfLinks.length; i++)
 		{
 			listOfLinks[i] = listOfLinks[i] + 'Link';
-			$('#' + listOfLinks[i]).css("border-bottom", "none");
+			$('#' + listOfLinks[i]).css("border-bottom", "none").removeClass("active");
 		}
 	}
 

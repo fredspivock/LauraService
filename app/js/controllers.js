@@ -36,6 +36,8 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 			$scope.projects = data;
 		});
 
+		//set view to top after load
+		window.scrollTo(0, 0);
 
 	}]);
 
@@ -74,6 +76,10 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 			$scope.projects = data;
 		});
 
+
+		//set view to top after load
+		window.scrollTo(0, 0);
+
 }]);
 
 //object containing helpers
@@ -104,7 +110,7 @@ myHelper.helpers = {
 
 		//adds link to the name to match the id of the 
 		currentHash = currentHash + "Link";
-		$('#' + currentHash).css("border-bottom", "1px solid #59ff89");
+		$('#' + currentHash).css("border-bottom", "1px solid #59ff89").addClass("active");
 	},
 
 
@@ -152,6 +158,11 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http',
 		$http.get('projects/about.json').success(function(data){
 
 			$scope.about = data;
+
 		});
+
+		//set view to top after load
+		window.scrollTo(0, 0);
+
 
 }]);
