@@ -127,8 +127,8 @@ lauraServiceControllers.controller('HelperCtrl', ['$scope',
 	}]);
 
 
-lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', 
-	function($scope, $http){
+lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location', '$anchorScroll', '$timeout',
+	function($scope, $http, $location, $anchorScroll, $timeout){
 
 		//makes opaue
 		var  opaqueNav = function(){
@@ -164,5 +164,17 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http',
 		//set view to top after load
 		window.scrollTo(0, 0);
 
+
+		
+		$timeout(function() {
+
+			//check if the link was pressed or url is set to "services"
+			if( $('#servicesLink').hasClass('active') ){
+			
+				$anchorScroll("servicesSection");
+  			}
+  		});
+
+	
 
 }]);

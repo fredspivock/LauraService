@@ -1,7 +1,8 @@
 var lauraService = angular.module("lauraServiceApp", [
 	'ngRoute',
 	'lauraServiceControllers',
-	'ngSanitize'
+	'ngSanitize',
+	'lauraServiceDirectives'
 	
 	]);
 
