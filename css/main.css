@@ -9,12 +9,13 @@
 .sansSerif {
 
 	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
 
 }
 
 /* links */
 a:link, a:visited, a:hover, a:active {
-    color: #707070;
+    color: #252525;
     text-decoration: none;
 }
 
@@ -30,8 +31,8 @@ li {
 
 h1 {
 
-	font-size: 3.5em;
-	color: #4f4c4d;
+	font-size: 4em;
+	color: #252525;
 	
 }
 
@@ -43,6 +44,7 @@ h1 {
     position: absolute;
     bottom: 0;
     z-index: 2001;
+    transition: 0.5s ease;
 }
 
 #header-wrap {
@@ -50,14 +52,14 @@ h1 {
     position: fixed;
     background-color: white;
     z-index: 2000;
-    height: 60px;
+    height: 60px; 
+    overflow: visible !important;
     -webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
 }
-
 /*clear version */
 
 #header-wrap.clear {
@@ -92,7 +94,7 @@ h1 {
 
 #icon {
 
-	width: 50px;
+	width: 110px;
 	transition: 0.5s ease;
 	
 }
@@ -105,6 +107,7 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;;
 	transition: 0.5s ease;
+	top:45px;
 }
 
 #navSide {
@@ -132,6 +135,7 @@ h1 {
 .scrolled#header-wrap {
   height: 50px;
   color: rgba(0,0,0,1);
+  box-shadow: 3px 3px 5px rgba(160, 160, 160, 0.15);
 
 }
 
@@ -139,14 +143,14 @@ h1 {
 
 	position: absolute;
 	bottom: 5%;
-	width: 30px;
+	width: 40px;
 	transition: 0.5s ease;
 }
 
 .scrolled.iconSpan {
 	position: absolute;
-	left: 1%;
-	top: 6px;
+	left: 5%;
+	top: 12px;
 	transition: 0.5s ease;
 
 }
@@ -172,7 +176,7 @@ h1 {
 .centered {
 
 		width: 90%;
-		max-width: 1170px;
+		max-width: 1920px;
 		margin-left: auto;
 		margin-right: auto;
 
@@ -193,12 +197,13 @@ h1 {
 	position: absolute;
 	text-align:center;
 	width: 100%;
-	top: 40%;
+	top: 43%;
 	color: white;
 	font-size: 2em;
-	text-shadow: 0px 0px 10px rgba(32,32,32, 0.9);
+	text-shadow: 0px 0px 18px rgba(32,32,32, 0.7);
 	z-index: 1000;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 
 }
 
@@ -272,7 +277,7 @@ img {
 
 #title {
 
-	padding-top: 30px;
+	padding-top: 5px;
 	text-align: left;
 	padding-bottom: 10px;
 
@@ -282,10 +287,10 @@ img {
 
 .accentLine {
 
-	border-top: 3px solid #CCFFCC;
-	border-bottom: 3px solid #CCFFCC;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	border-top: 1px solid #59ff89;
+	border-bottom: 1px solid #59ff89;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 #accentCircle {
@@ -301,7 +306,11 @@ img {
   justify-content: center;
   text-align: center;
   color: #808080;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 1.1em;
 }
+
 
 #shareIcon {
 
@@ -325,7 +334,7 @@ img {
 .sidebarTitle {
 
 	display: block;
-	font-weight: bold;
+	letter-spacing: .5px;
 	font-size: 1em;
 	text-transform: uppercase;
 
@@ -335,16 +344,18 @@ img {
 
 	padding-bottom: 10px;
 	display: block;
+	color: #808080;
 }
 
 
 /* Flexbox Description SideBar */
 .containerFlex {
 
-	padding-top: 20px;
+	padding-top: 25px;
 	display: -webkit-flex; display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap; -webkit-flex-wrap: wrap;
+	padding-bottom: 40px;
 }
 
 #sidebar {
@@ -360,7 +371,10 @@ img {
 	width: 65%;
 	line-height: 2;
 	font-size: 1.2em;
+	color: #808080;
 }
+
+
 
 /* project footer */
 
@@ -381,8 +395,8 @@ img {
 
 	padding-top: 10px;
 	text-decoration: underline;
-	color: #4141C7;
-	font-size: 1.2em;
+	color: #7D79E9;
+	font-size: 1.5em;
 	position: relative;
     top: 5px;
 }
@@ -407,7 +421,7 @@ img {
 
 #footerAccentLine {
 
-	border-bottom: 3px solid #CCFFCC;
+	border-bottom: 1px solid #59ff89;
 
 }
 
@@ -453,21 +467,42 @@ img {
  	display: inline-flex; display: -webkit-inline-flex;
  }
 
+#portraitLink {
+
+	color: white;
+	cursor: pointer;
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 43%;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0px 0px 18px rgba(32,32,32, 0.7);
+    z-index: 1000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
 
  /*ABOUT PAGE ICONS */
 
 .aboutIconContainer {
 
-	display: block;
 	height: auto;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
 }
 
 .box-fade {
 
-	display: inline-flex; display: -webkit-inline-flex;
-	flex-wrap: wrap; -webkit-flex-wrap: wrap;
+	display: inline-block;
+	/*display: inline-flex; display: -webkit-inline-flex;
+	flex-wrap: wrap; -webkit-flex-wrap: wrap; */
 	margin: 0 auto;
-	width: 33%;
+	vertical-align: top;
+	width: 32%;
 	height: auto;
 
 }
@@ -481,7 +516,7 @@ img {
 
 .iconFade {
 
-	width: 100%;
+	width: 99%;
 }
 
 .fade-title,
@@ -489,12 +524,32 @@ img {
 
 	transition: 0.5s;
 	text-align: center;
+	width: 80%;
+	margin: 0 auto;
 
 }
 
-.fade-description {
 
+
+.fade-title {
+
+	color: #808080;
+	padding-bottom: 10px;
+
+}
+
+
+.fade-description {
 	opacity: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.fade-top-text {
+
+	color: #808080;
+
 }
 
 /*BOX Fade ON HOVER */
@@ -502,9 +557,9 @@ img {
 .box-fade:hover .fade-description {
 
 	opacity: 1;
-	-webkit-transform: translate(0, -150px);
-	-ms-transform: translate(0, -150px);
-	transform: translate(0, -150px);
+	-webkit-transform: translate(0, -200px);
+	-ms-transform: translate(0, -200px);
+	transform: translate(0, -200px);
 
 
 }
@@ -512,22 +567,41 @@ img {
 .box-fade:hover .iconFadeContainer {
 
 	opacity: 0;
-	-webkit-transform: translate(0, -150px);
-	-ms-transform: translate(0, -150px);
-	transform: translate(0, -150px);
+	-webkit-transform: translate(0, -200px);
+	-ms-transform: translate(0, -200px);
+	transform: translate(0, -200px);
 }
 
 .box-fade:hover .fade-title {
 
-	-webkit-transform: translate(0, -150px);
-	-ms-transform: translate(0, -150px);
-	transform: translate(0, -150px);
+	-webkit-transform: translate(0, -200px);
+	-ms-transform: translate(0, -200px);
+	transform: translate(0, -200px);
 }
 
 .workedWith {
 
-	padding-top: 50px;
+	padding-top: 100px;
 }
+
+
+.iconFadeBottomText {
+
+
+	text-transform: uppercase;
+	padding-top: 12px;
+}
+
+.accentLineIcon {
+
+	
+	border-left: 1px solid grey;
+	width: 1%;
+	height: 210px;
+	display: inline-block;
+	position: absolute;
+}
+
 
 
 /* about logos */
@@ -548,6 +622,8 @@ img {
 }
 .clients-list img {max-width: 100%;}
 .clients-item {
+	display: -webkit-flex;
+	display: flex;
 	-webkit-justify-content: center; 
 	justify-content: center; 
 	padding: 10px; 
@@ -580,7 +656,7 @@ img {
 .tintPortrait {
 
 	background: rgba(0, 0, 0, 1);
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
@@ -589,14 +665,14 @@ img {
 
 .clients-underline4 {
 
-	border-bottom: 2px solid #707070;
+	border-bottom: 1px solid#252525;
 	width: 100%;
 	display: inline;
 }
 
 .clients-underline3 {
 
-	border-bottom: 2px solid #707070;
+	border-bottom: 1px solid #252525;
 	width: 100%;
 	display: none;
 }
@@ -604,7 +680,7 @@ img {
 
 .clients-underline2 {
 
-	border-bottom: 2px solid #707070;
+	border-bottom: 1px solid #252525;
 	width: 100%;
 	display: none;
 }
@@ -631,20 +707,20 @@ img {
 	}
 	.aboutIconContainer {
 
-		height: 150px;
+		height: 240px;
 	}
 
 	.iconFade  {
 
-		height: 150px;
+		height: 200px;
 	}
 
 	.box-fade:hover .fade-description {
 
 		opacity: 1;
-		transform: translate(0, -115px);
-		-webkit-transform: translate(0, -115px);
-		-ms-transform: translate(0, -115px);
+		transform: translate(0, -150px);
+		-webkit-transform: translate(0, -150px);
+		-ms-transform: translate(0, -150px);
 
 
 	}
@@ -652,17 +728,34 @@ img {
 	.box-fade:hover .iconFadeContainer {
 
 		opacity: 0;
-		transform: translate(0, -120px);
-		-webkit-transform: translate(0, -120px);
-		-ms-transform: translate(0, -120px);
+		transform: translate(0, -150px);
+		-webkit-transform: translate(0, -150px);
+		-ms-transform: translate(0, -150px);
 	}
 
 	.box-fade:hover .fade-title {
 
-		transform: translate(0, -120px);
-		-ms-transform: translate(0, -120px);
-		-webkit-transform: translate(0, -120px);
+		transform: translate(0, -150px);
+		-ms-transform: translate(0, -150px);
+		-webkit-transform: translate(0, -150px);
 	}
+
+	#icon {
+
+		width: 90px;
+		
+	}
+
+	.iconSpan {
+
+		top:40px;
+	}
+
+	h1 {
+
+		font-size: 3.5em;
+	}
+
 	
 
 
@@ -684,6 +777,11 @@ img {
 		height: 400px;
 		width: 100%;
 		overflow: hidden;
+	}
+
+	.iconFade  {
+
+		height: 160px;
 	}
 
 
@@ -710,6 +808,8 @@ img {
 	}
 
 
+
+.accentLineIcon {height: 260px;}
 
 
 
@@ -739,13 +839,13 @@ img {
 
 	.clients-underline3 {
 
-		border-bottom: 2px solid #707070;
+		border-bottom: 1px solid #707070;
 		width: 100%;
 		display: inline;
 	}
 	.clients-underline2 {
 
-		border-bottom: 2px solid #707070;
+		border-bottom: 1px solid #707070;
 		width: 100%;
 		display: none;
 	
@@ -753,48 +853,78 @@ img {
 
 	.clients-underline4 {
 
-		border-bottom: 2px solid #707070;
+		border-bottom: 1px solid #707070;
 		width: 100%;
 		display: none;
 	
 	}
 
-
-	.fade-description {
-
-		position: absolute;
-		text-align: center;
-		display: block;
-		left: 0;
-		right: 0;
-		width: 60%;
-		margin: 0 auto;
-
-
-	}
+	/* What I do best icons */
 
 	.aboutIconContainer {
 
-		display: block;
-		width: 40%;
-		height: auto;
-		
+		height: 450px;
 	}
 
-	.iconFadeContainer{
+	.iconFade {
 
-		height: auto;
+		height: 90px;
 	}
 
-	.box-fade {
-		display: block;
-		width:70%;
+
+	.fade-description {
+
+		padding-left: 0;
+		padding-right: 0;
+		opacity: 1;
+
 	}
 
-	.iconFade  {
+.box-fade:hover .fade-description {
 
-		height: 250px;
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+
+
 	}
+
+	.box-fade:hover .iconFadeContainer {
+
+		opacity: 1;
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+	}
+
+	.box-fade:hover .fade-title {
+
+		transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+	}
+
+	.accentLineIcon {
+
+	
+		border-left: 1px solid grey;
+		width: 1px;
+		height: 220px;
+		display: inline-block;
+		position: absolute;
+	}
+
+	.fade-description {
+
+		width: 95%;
+	}
+
+	.workedWith {
+		padding-top: 0px;
+
+	}
+
 
 
 }
@@ -827,6 +957,8 @@ img {
 		width: 33%;
 	}
 
+	.accentLineIcon {height: 320px;}
+
 }
 
 /* too narrow to support 2 columns */
@@ -849,7 +981,7 @@ img {
 
 	h1 {
 
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 
@@ -873,11 +1005,6 @@ img {
 	.logoAccentLine {
 
 		height: 50px;
-	}
-
-	.aboutIconContainer {
-
-		width: 50%;
 	}
 
 
@@ -908,15 +1035,15 @@ img {
 
 	.clients-item {width: auto;}
 	.clients-item.air-canada {padding-left: 0; padding-right: 0; width: 55%;}
-	.clients-item.apex { width: 45%; padding-bottom: 0}
-	.clients-item.cinema-du-quebec {padding-left: 0; width: 35%;}
+	.clients-item.apex {-webkit-justify-content: flex-end; justify-content: flex-end; width: 45%; padding-bottom: 0}
+	.clients-item.cinema-du-quebec {-webkit-justify-content: flex-start; justify-content: flex-start; padding-left: 0; width: 35%;}
 	.clients-item.enroute {padding-right: 0; width: 50%;}
 	.clients-item.filmbank {padding-left: 0; width: 50%;}
 	.clients-item.logistik {padding-right: 0; width: 50%;}
 	.clients-item.mercedes-benz {padding-left: 0; width: 55%;}
-	.clients-item.penny-black-media {padding-right: 0; width: 45%;}
-	.clients-item.spafax {padding-left: 0; width: 40%;}
-	.clients-item.sparksheet {padding-right: 0; width: 50%;}
+	.clients-item.penny-black-media {-webkit-justify-content: flex-end; justify-content: flex-end; padding-right: 0; width: 45%;}
+	.clients-item.spafax {-webkit-justify-content: flex-start; justify-content: flex-start; padding-left: 0; width: 40%;}
+	.clients-item.sparksheet {-webkit-justify-content: flex-end; justify-content: flex-end; padding-right: 0; width: 50%;}
 	.clients-item.vancouver-island-university {padding-left: 0; width: 60%;}
 	.clients-item.vista-jet {padding-right: 0; width: 35%;}
 	.clients-item.apex img,
@@ -933,14 +1060,14 @@ img {
 
 	.clients-underline4 {
 
-		border-bottom: 2px solid #707070;
+		border-bottom: 1px solid #707070;
 		width: 100%;
 		display: inline;
 	}
 
 	.clients-underline3 {
 
-		border-bottom: 2px solid #707070;
+		border-bottom: 1px solid #707070;
 		width: 100%;
 		display: none;
 	}
@@ -948,7 +1075,7 @@ img {
 
 	.clients-underline2 {
 
-		border-bottom: 2px solid #707070;
+		border-bottom: 1px solid #707070;
 		width: 100%;
 		display: inline;
 	}
@@ -956,6 +1083,78 @@ img {
 	.aboutIconContainer {
 
 		width: 60%;
+	}
+
+	.fade-description {
+
+		position: absolute;
+		text-align: center;
+		display: block;
+		left: 0;
+		right: 0;
+		width: 60%;
+		margin: 0 auto;
+
+
+	}
+
+	.aboutIconContainer {
+
+		display: block;
+		width: 90%;
+		height: auto;
+		
+	}
+
+	.accentLineIcon {
+
+		height: 1px;
+		width: 100%;
+	}
+
+
+	.iconFadeContainer{
+
+		height: auto;
+	}
+
+	.box-fade {
+		display: block;
+		width:70%;
+		padding-bottom: 40px;
+	}
+
+	.iconFade  {
+
+		width: 40%;
+	}
+
+	#icon {
+
+		width: 50px;
+	
+	}
+
+	.iconSpan {
+
+
+		top: 15px;
+	}
+
+	#portraitLink {
+
+		font-size: 1.2em;
+	}
+
+	.projectName {
+
+		font-size: 1.2em;
+	}
+
+	.fade-description{
+
+		position: static;
+		width: 100%;
 	}
 
 
