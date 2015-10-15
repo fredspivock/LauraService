@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lauraServiceApp">
+<head>
+  <meta charset="utf-8">
+	<title>Laura Service</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400|PT+Serif' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+  <script src="https://use.fonticons.com/ca8e7fa5.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="HelperCtrl" class="serifText">
+	<div ng-include="'partials/navBar.html'" onload="helpers.underline()" id="header-wrap"></div>
+	<div ng-view></div>
+  <div ng-include="'partials/footer.html'"></div>
+</body>
+</html>

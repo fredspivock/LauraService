@@ -1,0 +1,35 @@
+{
+
+	"title": "Mercedes-Benz Website",
+	"company": "Mercedes-Benz",
+	"year": "2014-2015",
+	"backgroundImage": "img/mercedes/Normal-Mercedes-Benz-Magazine-1.jpg",
+	"backgroundImage2x": "img/mercedes/2x-Mercedes-Benz-Magazine-1.jpg",
+	"description": "Mercedes-Benz provides an upscale ownership experience through perks like their magazine. The Canadian edition is created in French and English by Spafax’s Luxury Brands department, an in-house team of editors, writers and designers. The magazine has bold and engaging features presenting intriguing content and their vehicles. The website is the first to be built independently of the Mercedes’ headquarters and features all Canadian-made editorial content.<br/><br/>By collaborating with the art director and the editor-in-chief, I translated the beautiful magazine into a custom online reading experience. I elegantly presented the various article types and created behavioural guidelines for the motion effects, giving the website a polished aesthetic.",
+	
+	"sidebar": {
+		"AGENCY": "Spafax, Luxury Brands",
+		"CATEGORY" : "Website",
+		"RECOGNITION" : "<b>Eddies & Ozzies 2015</b><br/>Custom – Site Design<br/>Nomination",
+		"SERVICES" : "UX/UI Design",
+		"CREDITS" : "Natasha Mekhail, Celyn Harding-Jones, Guillaume Briere, Christal Agostino, Charles Lim, François Hoang, Lori Morgan, Adrian Kronowetter, Mélisa Discepola, Long Nguyen, Nancy Kovacs, Renee Morrison, Kristina Velan, and Moses Moore"
+	},
+
+	"link" : "magazine.mercedes-benz.ca",
+
+	"images": {
+		"desktop" : {
+
+				"img1x" : "img/mercedes/Normal-Mercedes-Benz-Magazine-2.jpg",
+				"img2x" : "img/mercedes/2x-Mercedes-Benz-Magazine-2.jpg"
+
+			},
+		"longView" : {
+				"img1x" : "img/mercedes/Normal-Mercedes-Benz-Magazine-3.jpg",
+				"img2x" : "img/mercedes/2x-Mercedes-Benz-Magazine-3.jpg"
+
+		}
+	}
+
+	
+}

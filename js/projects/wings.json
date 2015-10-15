@@ -1,0 +1,36 @@
+{
+	
+	"title": "Air Canada’s Earn Your Wings",
+	"company": "For Air Canada",
+	"year": "2014 (2012, 2013)",
+	"backgroundImage": "img/wings/Normal-Earn-Your-Wings-1.jpg",
+	"backgroundImage2x": "img/wings/2x-Earn-Your-Wings-1.jpg",
+	"description": "In its third edition, the award-winning Earn Your Wings is a leaderboard focused competition made exclusively for Air Canada’s Altitude members. The game offers badges and points for completing tasks based on actual flight travel. Through incentives like earned Aeroplan miles--including a jackpot for the top 20 participants--our goal was to encourage frequent flyers to book more flights with Air Canada.<br/><br/>I was involved with the design of the previous installments, but this time my role was to oversee the site redesign. I worked with a designer and illustrator to update visual assets, enhance the “User Profile” and “How to Play” sections. By adding stats and infographics we saw an increase in participant engagement, with users returning to the site more frequently to check their progress and standing. The site saw a 56 percent increase in the average number of badges earned, and an average increase of 12 percent more airport visits per user. It amplified competition amongst users, and Air Canada saw an overwhelming 875 percent ROI and reached more than 20,000 top-tier flyers.",
+	
+	"sidebar": {
+		"AGENCY": "Spafax",
+		"SERVICES" : "UX/UI, Art Direction, Identity and Illustration",
+		"CATEGORY" : "Website, Game, Loyalty Program",
+		"RECOGNITION" : "",
+		"CREDITS" : "JCharles Lim, Jasmin Legatos, Lori Morgan, Tina Sequeira, Arjun Basu, Ilana Weitzman, Andrew Jeglum, Adrian Kronowetter, Ariane Boisvert, Matthew Fox, Fraser Ballard, Long Nguyen, Mélisa Discepola, Christopher Waldau, François Hoang, Adrian Mellognio, and Kristina Velan"
+	},
+
+	"link" : "earnyourwings.aircanada.com",
+
+	"images": {
+
+		"phone" : {
+
+			"img1x" : "img/wings/Normal-Earn-Your-Wings-2.jpg",
+			"img2x" : "img/wings/2x-Earn-Your-Wings-2.jpg"
+			},
+
+		"desktop" : {
+
+			"img1x" : "img/wings/Normal-Earn-Your-Wings-3.jpg",
+			"img2x" : "img/wings/2x-Earn-Your-Wings-3.jpg"
+		}
+	}
+
+	
+}
