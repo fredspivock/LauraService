@@ -54,12 +54,14 @@ h1 {
     z-index: 2000;
     height: 60px; 
     overflow: visible !important;
-    -webkit-transition: background-color 200ms linear;
+    /*-webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
+    transition: background-color 200ms linear; */
+    transition: 0.8s ease;
 }
+
 /*clear version */
 
 #header-wrap.clear {
@@ -80,7 +82,6 @@ h1 {
   height: 50px;
   background-color: rgba(255,255,255,1);
   transition: background-color 1200ms linear;
-
 }
 
 .navLinksA.clear {
@@ -136,7 +137,6 @@ h1 {
   height: 50px;
   color: rgba(0,0,0,1);
   box-shadow: 3px 3px 5px rgba(160, 160, 160, 0.15);
-
 }
 
 .scrolled#icon {
@@ -168,6 +168,22 @@ h1 {
 .scrolled#header {
 
 	height: 20px;
+}
+
+.slideUp#header-wrap {
+
+	-webkit-transform: translate(0, -200px);
+	-ms-transform: translate(0, -200px);
+	transform: translate(0, -200px);
+}
+
+
+.slideDown#header-wrap {
+
+	-webkit-transform: translate(0, 200px);
+	-ms-transform: translate(0, 200px);
+	transform: translate(0, 200px);
+
 }
 
 
@@ -1109,7 +1125,9 @@ img {
 	.accentLineIcon {
 
 		height: 1px;
-		width: 100%;
+		width: 0%;
+
+
 	}
 
 
