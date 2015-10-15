@@ -5,6 +5,8 @@ $(document).ready(function(){
 
     setHeadSpace();
 
+    var isSlideUp = false;
+
 	//switches underlined link on url change
 	$(window).on('hashchange', function(e){
 
@@ -22,6 +24,8 @@ $(document).ready(function(){
 
 
 
+
+
 	//header code
 	var previousScroll = 0,
     headerOrgOffset = $('#header').height();
@@ -33,7 +37,7 @@ $(document).ready(function(){
 
 
     //sets head slide up, debounces to make more efficient
-    debounce(headerSlide(), 250);
+    headerSlide();
 
     //Adds Scrolled class to nav when moved
     if(Math.round($(window).scrollTop()) > 120) {
@@ -124,39 +128,33 @@ $(document).ready(function(){
 
             var currentScroll = $(this).scrollTop();
             if (currentScroll > headerOrgOffset) {
-                if (currentScroll > previousScroll) {
-                    $('#header-wrap').slideUp();
+                
+                if (currentScroll > previousScroll){ 
+                    if(isSlideUp === false) {
+                       // $('#header-wrap').slideUp();
+                       $("#header-wrap").addClass("slideUp");
+                        isSlideUp = true;
+                    }
+
                 } 
                 else {
-                    $('#header-wrap').slideDown();
+                    if( isSlideUp === true){
+                        //$('#header-wrap').slideDown();
+                        $("#header-wrap").removeClass("slideUp");
+                        isSlideUp = false;
+                    }
                 }
             }       
             else {
-                $('#header-wrap').slideDown();
+                if(isSlideUp === true) {
+                    //$('#header-wrap').slideDown();
+                    $("#header-wrap").removeClass("slideUp");
+                    isSlideUp = false;
+                }
             }
             previousScroll = currentScroll;
         }
 
-
-
-    // Returns a function, that, as long as it continues to be invoked, will not
-    // be triggered. The function will be called after it stops being called for
-    // N milliseconds. If `immediate` is passed, trigger the function on the
-    // leading edge, instead of the trailing.
-    function debounce(func, wait, immediate) {
-        var timeout;
-        return function() {
-            var context = this, args = arguments;
-            var later = function() {
-                timeout = null;
-                if (!immediate) func.apply(context, args);
-            };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-};
 
 
 
