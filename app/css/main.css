@@ -82,6 +82,7 @@ h1 {
   height: 50px;
   background-color: rgba(255,255,255,1);
   transition: background-color 1200ms linear;
+  transition: 0.8s ease;
 }
 
 .navLinksA.clear {
@@ -361,6 +362,20 @@ img {
 	padding-bottom: 10px;
 	display: block;
 	color: #808080;
+}
+#iconAboutList {
+
+	display: inline-block;
+}
+
+.iconLiAbout {
+	display: inline-block;
+}
+
+.aboutIcon {
+
+	padding: 5px;
+	height: 35px;
 }
 
 
@@ -974,6 +989,13 @@ img {
 	}
 
 	.accentLineIcon {height: 320px;}
+
+	#sidebar {
+
+		order: 2; -webkit-order:2;
+		width: 100%;
+
+	}
 
 }
 
