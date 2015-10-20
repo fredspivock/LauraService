@@ -37,9 +37,7 @@
 		<li ng-repeat="project in projects">
 			<div class="projectImage image-wrapper">
 				<a href="#/projects/{{ project.id }}"><p class="projectName sansSerif">{{project.name}}</p>
-				<div class="tinted">
 					<img class="tintImage img-responsive image" src="{{ project.imageUrl }}" ng-srcset="{{ project.imageUrl }} 1x, {{ project.imageUrl2x }} 2x"></a>
-				</div>
 			</div>
 		</li>
 	</ul>
