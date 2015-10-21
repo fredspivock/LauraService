@@ -85,7 +85,7 @@ h1 {
   transition: 0.8s ease;
 }
 
-.navLinksA.clear {
+.clear#header-wrap .navLinksA {
 
 	color: white;
 }
@@ -171,21 +171,13 @@ h1 {
 	height: 20px;
 }
 
-.slideUp#header-wrap {
+.scrolled#header-wrap .navLinksA {
 
-	-webkit-transform: translate(0, -200px);
-	-ms-transform: translate(0, -200px);
-	transform: translate(0, -200px);
+	color: rgb(112, 112, 112);
 }
 
 
-.slideDown#header-wrap {
 
-	-webkit-transform: translate(0, 200px);
-	-ms-transform: translate(0, 200px);
-	transform: translate(0, 200px);
-
-}
 
 
 /* For the home Page */

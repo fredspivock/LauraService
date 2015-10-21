@@ -104,6 +104,15 @@ var navMovement = setInterval(function() {
         });
     }
     last = $window.scrollTop(); // Updates the previous scroll value
+
+        if($window.scrollTop() > threshold)
+        {
+            $nav.addClass("scrolled");
+        }
+        else
+        {
+            $nav.removeClass("scrolled");
+        }
 }, delay); // Runs every `delay` amount
 
 });

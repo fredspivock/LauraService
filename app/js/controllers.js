@@ -12,7 +12,6 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 			$('#header-wrap').removeClass('clear');
 			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-			$('.navLinksA').css('color', '#707070');
 
 		}
 
@@ -49,7 +48,6 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 			$('#header-wrap').addClass('clear');
 			$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
-			$('.navLinksA').css('color', 'white');
 
 		}
 
