@@ -583,6 +583,13 @@ img {
 
 }
 
+
+.iconLinkButton {
+
+	display: block;
+}
+
+
 /*BOX Fade ON HOVER */
 
 .box-fade:hover .fade-description {

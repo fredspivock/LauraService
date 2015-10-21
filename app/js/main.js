@@ -3,9 +3,9 @@ $(document).ready(function(){
 	//run underline on page load
 	underLineCurrent();
 
+    //set header space on load
     setHeadSpace();
 
-    var isSlideUp = false;
 
 	//switches underlined link on url change
 	$(window).on('hashchange', function(e){
@@ -25,17 +25,7 @@ $(document).ready(function(){
 
 
 
-
-	//header code
-	var previousScroll = 0,
-    headerOrgOffset = $('#header').height();
-
-	$('#header-wrap').height($('#header').height());
-
-
-	$(window).scroll(function () {
-
-
+     //Sets the header Space
     function setHeadSpace(){
 
         var winHeight = $(window).height();
