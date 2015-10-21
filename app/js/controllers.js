@@ -7,15 +7,6 @@ var lauraServiceControllers = angular.module('lauraServiceControllers', ['ngSani
 lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 	function($scope, $http){
 
-		//makes opaue
-		var  opaqueNav = function(){
-
-			$('#header-wrap').removeClass('clear');
-			$('.navLinksA').removeClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-			$('.navLinksA').css('color', '#707070');
-
-		}
 
 		var setHeaderSpaceHome = function () {
 
@@ -28,7 +19,6 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 		}
 
-		opaqueNav();
 		setHeaderSpaceHome();
 
 		$http.get('projects/homepageProjects.json').success(function(data){
@@ -45,17 +35,6 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 	function($scope, $http, $routeParams){
 
 
-		//clears a navbar
-		var  clearNav = function(){
-
-			$('#header-wrap').addClass('clear');
-			$('.navLinksA').addClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
-			$('.navLinksA').css('color', 'white');
-
-		}
-
-		clearNav();
 
 
 		//Getting a individual
@@ -130,16 +109,6 @@ lauraServiceControllers.controller('HelperCtrl', ['$scope',
 lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location', '$anchorScroll', '$timeout',
 	function($scope, $http, $location, $anchorScroll, $timeout){
 
-		//makes opaue
-		var  opaqueNav = function(){
-
-			$('#header-wrap').removeClass('clear');
-			$('.navLinksA').removeClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-			$('.navLinksA').css('color', '#707070');
-
-		}
-
 		var setHeaderSpaceAbout = function () {
 
 
@@ -151,7 +120,6 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 
 		}
 
-		opaqueNav();
 
 		setHeaderSpaceAbout();
 

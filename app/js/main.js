@@ -36,44 +36,6 @@ $(document).ready(function(){
 	$(window).scroll(function () {
 
 
-    //sets head slide up, debounces to make more efficient
-    headerSlide();
-
-    //Adds Scrolled class to nav when moved
-    if(Math.round($(window).scrollTop()) > 120) {
-
-    	$('#header-wrap').addClass('scrolled');
-    	$('.iconSpan').addClass('scrolled');
-    	$('#icon').addClass('scrolled');
-    	$('#navSide').addClass('scrolled');
-    	$('#header').addClass('scrolled');
-
-    	//changes the icon to black when scrolled
-    	$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-		$('.navLinksA').css('color', '#707070');
-    	
-    }
-    else {
-    	$('#header-wrap').removeClass('scrolled');
-    	$('.iconSpan').removeClass('scrolled');
-    	$('#icon').removeClass('scrolled');
-    	$('#navSide').removeClass('scrolled');
-    	$('#header').removeClass('scrolled');
-
-    	//if it is clear nav bar, make it white.
-    	if( $('#header-wrap.clear').length)
-    	{
-    		$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
-    		$('.navLinksA').css('color', 'white');
-
-    	}
-    }
-
-});
-
-    
-    //determines height of header and sets an appropriate head size
-
     function setHeadSpace(){
 
         var winHeight = $(window).height();
@@ -123,38 +85,6 @@ $(document).ready(function(){
             $('#' + listOfLinks[i]).css("border-bottom", "none").removeClass("active");
         }
     }
-
-        function headerSlide() {
-
-            var currentScroll = $(this).scrollTop();
-            if (currentScroll > headerOrgOffset) {
-                
-                if (currentScroll > previousScroll){ 
-                    if(isSlideUp === false) {
-                       // $('#header-wrap').slideUp();
-                       $("#header-wrap").addClass("slideUp");
-                        isSlideUp = true;
-                    }
-
-                } 
-                else {
-                    if( isSlideUp === true){
-                        //$('#header-wrap').slideDown();
-                        $("#header-wrap").removeClass("slideUp");
-                        isSlideUp = false;
-                    }
-                }
-            }       
-            else {
-                if(isSlideUp === true) {
-                    //$('#header-wrap').slideDown();
-                    $("#header-wrap").removeClass("slideUp");
-                    isSlideUp = false;
-                }
-            }
-            previousScroll = currentScroll;
-        }
-
 
 
 
