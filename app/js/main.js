@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 var wind = this, // Gets window object
     last = 0,    // The last read top value
-    delay = 150, // The delay for the setInterval
+    delay = 100, // The delay for the setInterval
     threshold = 30;    // The max scroll distance before showing/hiding the nav
 
 // I always set a variable to my setIntervals in case I want to stop them later on
