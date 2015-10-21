@@ -79,4 +79,31 @@ $(document).ready(function(){
 
 
 
+
+
+
+// FROM http://stackoverflow.com/questions/18035910/how-to-implement-auto-hide-navigation
+
+var wind = this, // Gets window object
+    last = 0,    // The last read top value
+    delay = 150, // The delay for the setInterval
+    threshold = 30;    // The max scroll distance before showing/hiding the nav
+
+// I always set a variable to my setIntervals in case I want to stop them later on
+var navMovement = setInterval(function() {
+    var $nav = $('#header-wrap'), // Gets nav object
+        $window = $(wind); // Makes the window object a jQuery object
+    if($window.scrollTop() - last < -threshold) { // Happens if the difference in scroll is below the negative threshold
+        $nav.css({ // Put the nav at the top of the window
+            top: 0
+        });
+    }
+    else if($window.scrollTop() - last > threshold){ // Happend if the difference in scroll is above the threshold
+        $nav.css({ // Hides the navigation
+            top: -$nav.height()
+        });
+    }
+    last = $window.scrollTop(); // Updates the previous scroll value
+}, delay); // Runs every `delay` amount
+
 });

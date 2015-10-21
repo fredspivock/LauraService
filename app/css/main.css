@@ -140,7 +140,7 @@ h1 {
   box-shadow: 3px 3px 5px rgba(160, 160, 160, 0.15);
 }
 
-.scrolled#icon {
+.scrolled#header-wrap #icon{
 
 	position: absolute;
 	bottom: 5%;
@@ -148,7 +148,7 @@ h1 {
 	transition: 0.5s ease;
 }
 
-.scrolled.iconSpan {
+.scrolled#header-wrap .iconSpan {
 	position: absolute;
 	left: 5%;
 	top: 12px;
@@ -156,7 +156,7 @@ h1 {
 
 }
 
-.scrolled#navSide {
+.scrolled#header-wrap #navSide {
 
 	right: 5%;
 	margin-left: auto;
@@ -166,7 +166,7 @@ h1 {
 	transition: 0.5s ease;
 }
 
-.scrolled#header {
+.scrolled#header-wrap #header {
 
 	height: 20px;
 }
