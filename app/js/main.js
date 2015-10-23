@@ -87,30 +87,44 @@ $(document).ready(function(){
 var wind = this, // Gets window object
     last = 0,    // The last read top value
     delay = 100, // The delay for the setInterval
-    threshold = 30;    // The max scroll distance before showing/hiding the nav
+    threshold = 30,    // The max scroll distance before showing/hiding the nav
+    minWidth = 900;    // The minimum widht of the window before it becomes static
 
 // I always set a variable to my setIntervals in case I want to stop them later on
 var navMovement = setInterval(function() {
     var $nav = $('#header-wrap'), // Gets nav object
-        $window = $(wind); // Makes the window object a jQuery object
-    if($window.scrollTop() - last < -threshold) { // Happens if the difference in scroll is below the negative threshold
-        $nav.css({ // Put the nav at the top of the window
+    $window = $(wind); // Makes the window object a jQuery object
+
+
+    if($window.width() > minWidth) {
+
+        if($window.scrollTop() - last < -threshold) { // Happens if the difference in scroll is below the negative threshold
+            $nav.css({ // Put the nav at the top of the window
+                top: 0
+            });
+        }
+        else if($window.scrollTop() - last > threshold){ // Happend if the difference in scroll is above the threshold
+            $nav.css({ // Hides the navigation
+                top: -$nav.height()
+            });
+        }
+        last = $window.scrollTop(); // Updates the previous scroll value
+    }
+    else {
+
+        $nav.css({
             top: 0
         });
     }
-    else if($window.scrollTop() - last > threshold){ // Happend if the difference in scroll is above the threshold
-        $nav.css({ // Hides the navigation
-            top: -$nav.height()
-        });
-    }
-    last = $window.scrollTop(); // Updates the previous scroll value
+        
+    //When 
+    if($window.scrollTop() > threshold) {
 
-        if($window.scrollTop() > threshold)
-        {
             $nav.addClass("scrolled");
-        }
-        else
-        {
+    }
+    
+    else {
+
             $nav.removeClass("scrolled");
         }
 }, delay); // Runs every `delay` amount
