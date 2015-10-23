@@ -811,8 +811,49 @@ img {
 
 
 
-.accentLineIcon {height: 260px;}
+	.accentLineIcon {height: 260px;}
 
+
+	#header-wrap {
+  		height: 50px;
+  		color: rgba(0,0,0,1);
+  		box-shadow: 3px 3px 5px rgba(160, 160, 160, 0.15);
+  		transition: 0.5s ease;
+	}
+
+	#header-wrap #icon{
+
+		position: absolute;
+		width: 40px;
+		transition: 0.5s ease;
+		bottom: -2%;
+	}
+
+	#header-wrap .iconSpan {
+		position: absolute;
+		left: 5%;
+		bottom: 20%;
+		top: 12px;
+		transition: 0.5s ease;
+
+	}
+
+	#header-wrap #navSide {
+
+		right: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 15px;
+		text-align: right;
+		transition: 0.5s ease;
+	}
+
+
+	#header-wrap .navLinksA {
+
+		color: rgb(112, 112, 112);
+		transition: 0.5s ease;
+	}
 
 
 

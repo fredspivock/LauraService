@@ -109,24 +109,27 @@ var navMovement = setInterval(function() {
             });
         }
         last = $window.scrollTop(); // Updates the previous scroll value
+
+        //When below the threshold, display the scrolled menu
+        if($window.scrollTop() > threshold) {
+
+            $nav.addClass("scrolled");
+        }
+    
+        else {
+
+            $nav.removeClass("scrolled");
+        }
+
     }
     else {
 
         $nav.css({
             top: 0
         });
-    }
-        
-    //When 
-    if($window.scrollTop() > threshold) {
 
-            $nav.addClass("scrolled");
     }
-    
-    else {
 
-            $nav.removeClass("scrolled");
-        }
 }, delay); // Runs every `delay` amount
 
 });
