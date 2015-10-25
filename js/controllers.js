@@ -11,9 +11,7 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 		var  opaqueNav = function(){
 
 			$('#header-wrap').removeClass('clear');
-			$('.navLinksA').removeClass('clear');
 			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-			$('.navLinksA').css('color', '#707070');
 
 		}
 
@@ -49,10 +47,7 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 		var  clearNav = function(){
 
 			$('#header-wrap').addClass('clear');
-			$('.navLinksA').addClass('clear');
 			$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
-			$('.navLinksA').css('color', 'white');
-
 		}
 
 		clearNav();
@@ -66,9 +61,16 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 		});
 
+		$scope.toPageTop = function() {
+
+			$("html, body").animate({
+
+				scrollTop: 0,
+
+			}, "slow");
+		}
 
 
-		//$scope.description = $scope.projectSingle.description;
 
 		//For the More Work, gets main list
 		$http.get('projects/homepageProjects.json').success(function(data){
@@ -113,7 +115,6 @@ myHelper.helpers = {
 		$('#' + currentHash).css("border-bottom", "1px solid #59ff89").addClass("active");
 	},
 
-
 	};
 
 
@@ -134,9 +135,7 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 		var  opaqueNav = function(){
 
 			$('#header-wrap').removeClass('clear');
-			$('.navLinksA').removeClass('clear');
 			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-			$('.navLinksA').css('color', '#707070');
 
 		}
 

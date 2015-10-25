@@ -3,9 +3,9 @@ $(document).ready(function(){
 	//run underline on page load
 	underLineCurrent();
 
+    //set header space on load
     setHeadSpace();
 
-    var isSlideUp = false;
 
 	//switches underlined link on url change
 	$(window).on('hashchange', function(e){
@@ -24,56 +24,7 @@ $(document).ready(function(){
 
 
 
-
-
-	//header code
-	var previousScroll = 0,
-    headerOrgOffset = $('#header').height();
-
-	$('#header-wrap').height($('#header').height());
-
-
-	$(window).scroll(function () {
-
-
-    //sets head slide up, debounces to make more efficient
-    headerSlide();
-
-    //Adds Scrolled class to nav when moved
-    if(Math.round($(window).scrollTop()) > 120) {
-
-    	$('#header-wrap').addClass('scrolled');
-    	$('.iconSpan').addClass('scrolled');
-    	$('#icon').addClass('scrolled');
-    	$('#navSide').addClass('scrolled');
-    	$('#header').addClass('scrolled');
-
-    	//changes the icon to black when scrolled
-    	$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-		$('.navLinksA').css('color', '#707070');
-    	
-    }
-    else {
-    	$('#header-wrap').removeClass('scrolled');
-    	$('.iconSpan').removeClass('scrolled');
-    	$('#icon').removeClass('scrolled');
-    	$('#navSide').removeClass('scrolled');
-    	$('#header').removeClass('scrolled');
-
-    	//if it is clear nav bar, make it white.
-    	if( $('#header-wrap.clear').length)
-    	{
-    		$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
-    		$('.navLinksA').css('color', 'white');
-
-    	}
-    }
-
-});
-
-    
-    //determines height of header and sets an appropriate head size
-
+     //Sets the header Space
     function setHeadSpace(){
 
         var winHeight = $(window).height();
@@ -124,39 +75,71 @@ $(document).ready(function(){
         }
     }
 
-        function headerSlide() {
 
-            var currentScroll = $(this).scrollTop();
-            if (currentScroll > headerOrgOffset) {
-                
-                if (currentScroll > previousScroll){ 
-                    if(isSlideUp === false) {
-                       // $('#header-wrap').slideUp();
-                       $("#header-wrap").addClass("slideUp");
-                        isSlideUp = true;
-                    }
 
-                } 
-                else {
-                    if( isSlideUp === true){
-                        //$('#header-wrap').slideDown();
-                        $("#header-wrap").removeClass("slideUp");
-                        isSlideUp = false;
-                    }
-                }
-            }       
-            else {
-                if(isSlideUp === true) {
-                    //$('#header-wrap').slideDown();
-                    $("#header-wrap").removeClass("slideUp");
-                    isSlideUp = false;
-                }
+
+
+
+
+// FROM http://stackoverflow.com/questions/18035910/how-to-implement-auto-hide-navigation
+
+var wind = this, // Gets window object
+    last = 0,    // The last read top value
+    delay = 100, // The delay for the setInterval
+    threshold = 30,    // The max scroll distance before showing/hiding the nav
+    minWidth = 900;    // The minimum widht of the window before it becomes static
+
+
+// I always set a variable to my setIntervals in case I want to stop them later on
+var navMovement = setInterval(function() {
+    var $nav = $('#header-wrap'), // Gets nav object
+    $window = $(wind); // Makes the window object a jQuery object
+
+
+    if($window.width() > minWidth) {
+
+        if($window.scrollTop() - last < -threshold) { // Happens if the difference in scroll is below the negative threshold
+            $nav.css({ // Put the nav at the top of the window
+                top: 0
+            });
+        }
+        else if($window.scrollTop() - last > threshold){ // Happend if the difference in scroll is above the threshold
+            $nav.css({ // Hides the navigation
+                top: -$nav.height()
+            });
+        }
+        last = $window.scrollTop(); // Updates the previous scroll value
+
+        //When below the threshold, display the scrolled menu
+        if($window.scrollTop() > threshold) {
+
+            $nav.addClass("scrolled");
+            $('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
+
+
+        }
+    
+        else {
+
+            $nav.removeClass("scrolled");
+            if($nav.hasClass("clear")) {
+
+                $('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
             }
-            previousScroll = currentScroll;
         }
 
+    }
+    else {
 
+        $nav.css({
+            top: 0
 
+        });
+        $nav.addClass("scrolled");
+        $('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
 
+    }
+
+}, delay); // Runs every `delay` amount
 
 });

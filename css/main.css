@@ -31,35 +31,27 @@ li {
 
 h1 {
 
-	font-size: 4em;
+	font-size: 5em;
 	color: #252525;
 	
 }
 
 /* Stuff for the animated nav Bar */
 
-#header {
-
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 2001;
-    transition: 0.5s ease;
-}
 
 #header-wrap {
     width: 100%;
     position: fixed;
     background-color: white;
     z-index: 2000;
-    height: 60px; 
+    height: 100px; 
     overflow: visible !important;
     /*-webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear; */
-    transition: 0.8s ease;
+    transition: 0.5s ease;
 }
 
 /*clear version */
@@ -68,24 +60,22 @@ h1 {
     width: 100%;
     position: fixed;
     background-color: rgba(0,0,0,0);
-    z-index: 2000;
-    height: 60px;
     -webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
 }
 
 .scrolled.clear#header-wrap {
   height: 50px;
   background-color: rgba(255,255,255,1);
   transition: background-color 1200ms linear;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
 }
 
-.navLinksA.clear {
+.clear#header-wrap .navLinksA {
 
 	color: white;
 }
@@ -103,7 +93,7 @@ h1 {
 
 .iconSpan {
 
-	position: relative;
+	position: absolute;
 	left: 5%;
 	display: inline-block;
 	margin-left: auto;
@@ -116,7 +106,7 @@ h1 {
 
 	position: absolute;
 	right: 5%;
-	bottom: 0%;
+	bottom: 10%;
 	display: inline-flex; display: -webkit-inline-flex;
 	margin-left: auto;
 	margin-right: auto;
@@ -138,25 +128,27 @@ h1 {
   height: 50px;
   color: rgba(0,0,0,1);
   box-shadow: 3px 3px 5px rgba(160, 160, 160, 0.15);
+  transition: 0.5s ease;
 }
 
-.scrolled#icon {
+.scrolled#header-wrap #icon{
 
 	position: absolute;
-	bottom: 5%;
 	width: 40px;
 	transition: 0.5s ease;
+	bottom: -2%;
 }
 
-.scrolled.iconSpan {
+.scrolled#header-wrap .iconSpan {
 	position: absolute;
 	left: 5%;
+	bottom: 20%;
 	top: 12px;
 	transition: 0.5s ease;
 
 }
 
-.scrolled#navSide {
+.scrolled#header-wrap #navSide {
 
 	right: 5%;
 	margin-left: auto;
@@ -166,26 +158,21 @@ h1 {
 	transition: 0.5s ease;
 }
 
-.scrolled#header {
 
-	height: 20px;
-}
+.scrolled#header-wrap .navLinksA {
 
-.slideUp#header-wrap {
-
-	-webkit-transform: translate(0, -200px);
-	-ms-transform: translate(0, -200px);
-	transform: translate(0, -200px);
+	color: rgb(112, 112, 112);
+	transition: 0.5s ease;
 }
 
 
-.slideDown#header-wrap {
+.scrolled.clear#header-wrap .navLinksA {
 
-	-webkit-transform: translate(0, 200px);
-	-ms-transform: translate(0, 200px);
-	transform: translate(0, 200px);
-
+	color: rgb(112, 112, 112);
+	transition: 0.5s ease;
 }
+
+
 
 
 /* For the home Page */
@@ -259,15 +246,6 @@ img {
 	border: 0;
 }
 
-.tintImage {
-
-	opacity: .75;
-}
-
-.tinted {
-	display: block;
-	background: rgba(0, 0, 0, 1);
-}
 
 #homepageHead {
 
@@ -363,6 +341,20 @@ img {
 	display: block;
 	color: #808080;
 }
+#iconAboutList {
+
+	display: inline-block;
+}
+
+.iconLiAbout {
+	display: inline-block;
+}
+
+.aboutIcon {
+
+	padding: 5px;
+	height: 35px;
+}
 
 
 /* Flexbox Description SideBar */
@@ -422,7 +414,10 @@ img {
 
 	text-decoration: underline;
 	color: #707070;
+	cursor: pointer;
+	z-index: 20010;
 }
+
 
 #greenArrow {
 
@@ -568,6 +563,13 @@ img {
 	color: #808080;
 
 }
+
+
+.iconLinkButton {
+
+	display: block;
+}
+
 
 /*BOX Fade ON HOVER */
 
@@ -716,12 +718,7 @@ img {
 
 	}
 
-	#projectImageWrapper {
 
-		height: 600px;
-		width: 100%;
-		overflow: hidden;
-	}
 	.aboutIconContainer {
 
 		height: 240px;
@@ -770,7 +767,7 @@ img {
 
 	h1 {
 
-		font-size: 3.5em;
+		font-size: 4em;
 	}
 
 	
@@ -789,16 +786,16 @@ img {
 
 	}
 
-	#projectImageWrapper {
-
-		height: 400px;
-		width: 100%;
-		overflow: hidden;
-	}
 
 	.iconFade  {
 
 		height: 160px;
+	}
+
+	h1 {
+
+		font-size: 4em;
+
 	}
 
 
@@ -817,16 +814,71 @@ img {
 
 	}
 
-	#projectImageWrapper {
 
-		height: 300px;
-		width: 100%;
-		overflow: hidden;
+
+
+	.accentLineIcon {height: 260px;}
+
+
+	#header-wrap {
+  		height: 50px;
+  		color: rgba(0,0,0,1);
+  		box-shadow: 3px 3px 5px rgba(160, 160, 160, 0.15);
+  		transition: 0.5s ease;
+	}
+
+	#header-wrap #icon{
+
+		position: absolute;
+		width: 40px;
+		transition: 0.5s ease;
+		bottom: -2%;
+	}
+
+	#header-wrap .iconSpan {
+		position: absolute;
+		left: 5%;
+		bottom: 20%;
+		top: 12px;
+		transition: 0.5s ease;
+
+	}
+
+	#header-wrap #navSide {
+
+		right: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 15px;
+		text-align: right;
+		transition: 0.5s ease;
 	}
 
 
+	#header-wrap .navLinksA {
 
-.accentLineIcon {height: 260px;}
+		color: rgb(112, 112, 112);
+		transition: 0.5s ease;
+	}
+
+	#header-wrap.clear {
+    	width: 100%;
+    	position: fixed;
+    	background-color: rgba(255,255,255,1);
+   		-webkit-transition: background-color 200ms linear;
+    	-moz-transition: background-color 200ms linear;
+    	-o-transition: background-color 200ms linear;
+    	-ms-transition: background-color 200ms linear;
+    	transition: background-color 200ms linear;
+    	transition: 0.5s ease;
+	}
+
+
+	.clear#header-wrap .navLinksA {
+
+		color: rgb(112, 112, 112);
+	}
+
 
 
 
@@ -956,14 +1008,6 @@ img {
 
 	}
 
-	#projectImageWrapper {
-
-		height: 200px;
-		width: 100%;
-		overflow: hidden;
-	}
-
-
 	.contentParagraph {
 
 		width: auto;
@@ -975,6 +1019,13 @@ img {
 	}
 
 	.accentLineIcon {height: 320px;}
+
+	#sidebar {
+
+		order: 2; -webkit-order:2;
+		width: 100%;
+
+	}
 
 }
 
@@ -1037,12 +1088,6 @@ img {
 
 	}
 
-	#projectImageWrapper {
-
-		height: 100px;
-		width: 100%;
-		overflow: hidden;
-	}
 
 	.logo {
 
@@ -1154,10 +1199,15 @@ img {
 	
 	}
 
+	#navSide {
+
+		bottom: 25%;
+	}
+
 	.iconSpan {
 
 
-		top: 15px;
+		bottom: 0%;
 	}
 
 	#portraitLink {
