@@ -172,7 +172,7 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 			
 				$anchorScroll("servicesSection");
   			}
-  		});
+  		}, 300);
 
 	
 
