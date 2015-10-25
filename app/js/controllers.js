@@ -48,7 +48,6 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 			$('#header-wrap').addClass('clear');
 			$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
-
 		}
 
 		clearNav();
@@ -62,9 +61,16 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 		});
 
+		$scope.toPageTop = function() {
+
+			$("html, body").animate({
+
+				scrollTop: 0,
+
+			}, "slow");
+		}
 
 
-		//$scope.description = $scope.projectSingle.description;
 
 		//For the More Work, gets main list
 		$http.get('projects/homepageProjects.json').success(function(data){
@@ -109,7 +115,6 @@ myHelper.helpers = {
 		$('#' + currentHash).css("border-bottom", "1px solid #59ff89").addClass("active");
 	},
 
-
 	};
 
 
@@ -131,7 +136,6 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 
 			$('#header-wrap').removeClass('clear');
 			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
-			$('.navLinksA').css('color', '#707070');
 
 		}
 

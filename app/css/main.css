@@ -31,7 +31,7 @@ li {
 
 h1 {
 
-	font-size: 4em;
+	font-size: 5em;
 	color: #252525;
 	
 }
@@ -166,6 +166,12 @@ h1 {
 }
 
 
+.scrolled.clear#header-wrap .navLinksA {
+
+	color: rgb(112, 112, 112);
+	transition: 0.5s ease;
+}
+
 
 
 
@@ -240,15 +246,6 @@ img {
 	border: 0;
 }
 
-.tintImage {
-
-	opacity: .75;
-}
-
-.tinted {
-	display: block;
-	background: rgba(0, 0, 0, 1);
-}
 
 #homepageHead {
 
@@ -417,7 +414,10 @@ img {
 
 	text-decoration: underline;
 	color: #707070;
+	cursor: pointer;
+	z-index: 20010;
 }
+
 
 #greenArrow {
 
@@ -767,7 +767,7 @@ img {
 
 	h1 {
 
-		font-size: 3.5em;
+		font-size: 4em;
 	}
 
 	
@@ -790,6 +790,12 @@ img {
 	.iconFade  {
 
 		height: 160px;
+	}
+
+	h1 {
+
+		font-size: 4em;
+
 	}
 
 
@@ -854,6 +860,26 @@ img {
 		color: rgb(112, 112, 112);
 		transition: 0.5s ease;
 	}
+
+	#header-wrap.clear {
+    	width: 100%;
+    	position: fixed;
+    	background-color: rgba(255,255,255,1);
+   		-webkit-transition: background-color 200ms linear;
+    	-moz-transition: background-color 200ms linear;
+    	-o-transition: background-color 200ms linear;
+    	-ms-transition: background-color 200ms linear;
+    	transition: background-color 200ms linear;
+    	transition: 0.5s ease;
+	}
+
+
+	.clear#header-wrap .navLinksA {
+
+		color: rgb(112, 112, 112);
+	}
+
+
 
 
 

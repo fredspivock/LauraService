@@ -24,7 +24,6 @@ $(document).ready(function(){
 
 
 
-
      //Sets the header Space
     function setHeadSpace(){
 
@@ -90,6 +89,7 @@ var wind = this, // Gets window object
     threshold = 30,    // The max scroll distance before showing/hiding the nav
     minWidth = 900;    // The minimum widht of the window before it becomes static
 
+
 // I always set a variable to my setIntervals in case I want to stop them later on
 var navMovement = setInterval(function() {
     var $nav = $('#header-wrap'), // Gets nav object
@@ -114,11 +114,18 @@ var navMovement = setInterval(function() {
         if($window.scrollTop() > threshold) {
 
             $nav.addClass("scrolled");
+            $('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
+
+
         }
     
         else {
 
             $nav.removeClass("scrolled");
+            if($nav.hasClass("clear")) {
+
+                $('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
+            }
         }
 
     }
@@ -126,7 +133,10 @@ var navMovement = setInterval(function() {
 
         $nav.css({
             top: 0
+
         });
+        $nav.addClass("scrolled");
+        $('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
 
     }
 

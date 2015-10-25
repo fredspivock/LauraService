@@ -7,7 +7,7 @@
 		<li ng-repeat="project in projects">
 			<div class="projectImage image-wrapper">
 				<a href="#/projects/{{ project.id }}"><p class="projectName sansSerif">{{project.name}}</p>
-					<img class="img-responsive image" src="{{ project.imageUrl }}" ng-srcset="{{ project.imageUrl }} 1x, {{ project.imageUrl2x }} 2x">
+					<img class="img-responsive image" ng-src="{{ project.imageUrl }}" ng-srcset="{{ project.imageUrl }} 1x, {{ project.imageUrl2x }} 2x">
 				</a>
 			</div>
 		</li>
