@@ -172,11 +172,6 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 
         	winHeight = .95 * winHeight;
 
-        	if($(window).width() < 900)	{
-
-        		console.log("hello");
-        		winHeight = winHeight - 50;
-        	}
 
 	        $("#homepageHead").css("height", winHeight + "px" );
 
