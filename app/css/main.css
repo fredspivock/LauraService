@@ -374,6 +374,30 @@ img {
 
 }
 
+
+.sidebarLink {
+
+	color: #7d79e9 !important;
+}
+
+/* See More items */
+.sideBarSeeMore {
+
+	text-decoration: underline;
+	cursor: pointer;
+
+}
+
+
+/* See More Description */
+
+.hiddenSideBar {
+
+	display: none;
+
+}
+
+
 .contentParagraph {
 
 	order: 1; -webkit-order: 1;

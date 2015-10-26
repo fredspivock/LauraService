@@ -44,6 +44,9 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 
 		//clears a navbar
+
+		var seeMoreOpen =  false;
+
 		var  clearNav = function(){
 
 			$('#header-wrap').addClass('clear');
@@ -61,6 +64,8 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 		});
 
+		
+		//function scrolls to page top
 		$scope.toPageTop = function() {
 
 			$("html, body").animate({
@@ -69,6 +74,27 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 			}, "slow");
 		}
+
+
+		//function See more Button
+
+		$scope.seeMore = function() {
+
+			if( seeMoreOpen === false){
+				$('.hiddenSideBar').css('display', 'block');
+				$('.seeMoreLink').html("See Less");
+				seeMoreOpen = true;
+			}
+			else if(seeMoreOpen === true) {
+
+				$('.hiddenSideBar').css('display', 'none');
+				$('.seeMoreLink').html("See More");
+				seeMoreOpen = false;
+			}
+				
+		}
+
+
 
 
 
