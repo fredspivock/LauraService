@@ -10,6 +10,8 @@ lauraServiceDirectives.directive('scrollOnClick', function($timeout){
 			
 			$timeout( $elm.on('click', function(){
 
+				$('#servicesLink').addClass('clicked');
+
 				$('body').animate({
 					scrollTop: $("#servicesSection").offset().top,
 				}, 2000);

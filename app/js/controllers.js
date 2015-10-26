@@ -194,12 +194,18 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 		$timeout(function() {
 
 			//check if the link was pressed or url is set to "services"
-			if( $('#servicesLink').hasClass('active') ){
+			if( $('#servicesLink').hasClass('active') && !$('#servicesLink').hasClass('clicked') ){
 			
 				$anchorScroll("servicesSection");
   			}
+
+  			if($('#servicesLink').hasClass('clicked') && $('#servicesLink').hasClass('active')) {
+  				$('body').animate({
+					scrollTop: $("#servicesSection").offset().top,
+				}, 2000);
+  			}
+
   		}, 300);
 
-	
 
 }]);
