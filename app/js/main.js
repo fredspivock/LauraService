@@ -36,6 +36,11 @@ $(document).ready(function(){
             winHeight = 300;
         }
 
+        if( $(window).width() < 900)    {
+
+                winHeight = winHeight - 50;
+        }
+        
 
         $("#homepageHead").css("height", winHeight + "px" );
 
