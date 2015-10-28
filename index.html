@@ -2,6 +2,8 @@
 <html lang="en" ng-app="lauraServiceApp">
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Laura Service design portfolio">
+  <meta name="keywords" content="Laura, Service, Laura Service, Design, design, montreal, Montreal, UX, UI">
 	<title>Laura Service</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald:400|PT+Serif' rel='stylesheet' type='text/css'>
@@ -18,6 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-controller="HelperCtrl" class="serifText">
+  <div id="headerSpaceTop"></div>
 	<div ng-include="'partials/navBar.html'" onload="helpers.underline()"></div>
 	<div ng-view></div>
   <div ng-include="'partials/footer.html'"></div>

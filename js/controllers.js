@@ -44,6 +44,9 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 
 		//clears a navbar
+
+		var seeMoreOpen =  false;
+
 		var  clearNav = function(){
 
 			$('#header-wrap').addClass('clear');
@@ -61,6 +64,8 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 		});
 
+		
+		//function scrolls to page top
 		$scope.toPageTop = function() {
 
 			$("html, body").animate({
@@ -69,6 +74,27 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 			}, "slow");
 		}
+
+
+		//function See more Button
+
+		$scope.seeMore = function() {
+
+			if( seeMoreOpen === false){
+				$('.hiddenSideBar').css('display', 'block');
+				$('.seeMoreLink').html("See Less Awards");
+				seeMoreOpen = true;
+			}
+			else if(seeMoreOpen === true) {
+
+				$('.hiddenSideBar').css('display', 'none');
+				$('.seeMoreLink').html("See More Awards");
+				seeMoreOpen = false;
+			}
+				
+		}
+
+
 
 
 
@@ -146,6 +172,7 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 
         	winHeight = .95 * winHeight;
 
+
 	        $("#homepageHead").css("height", winHeight + "px" );
 
 		}
@@ -168,12 +195,18 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 		$timeout(function() {
 
 			//check if the link was pressed or url is set to "services"
-			if( $('#servicesLink').hasClass('active') ){
+			if( $('#servicesLink').hasClass('active') && !$('#servicesLink').hasClass('clicked') ){
 			
 				$anchorScroll("servicesSection");
   			}
-  		});
 
-	
+  			if($('#servicesLink').hasClass('clicked') && $('#servicesLink').hasClass('active')) {
+  				$('body').animate({
+					scrollTop: $("#servicesSection").offset().top,
+				}, 2000);
+  			}
+
+  		}, 300);
+
 
 }]);

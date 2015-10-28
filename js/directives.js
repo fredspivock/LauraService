@@ -1,42 +1,22 @@
 var lauraServiceDirectives = angular.module('lauraServiceDirectives', []);
 
 //click services link and scroll to what I do best
-lauraServiceDirectives.directive('scrollOnClick', function(){
+lauraServiceDirectives.directive('scrollOnClick', function($timeout){
 
 	return{
 
 		restrict:'A',
 		link: function(scope, $elm){
-			$elm.on('click', function(){
+			
+			$timeout( $elm.on('click', function(){
+
+				$('#servicesLink').addClass('clicked');
 
 				$('body').animate({
-					scrollTop: $("#servicesSection").offset().top
+					scrollTop: $("#servicesSection").offset().top,
 				}, 2000);
-			});
+			}), 300);
 		}
 	}
 
 });
-
-//click services link and scroll to what I do best
-/*
-lauraServiceDirectives.directive('scrollOnLoad', function(){
-
-	return {
-		restrict: 'A',
-		link: function(scope, $elm){
-
-			$elm.ready(function(){
-
-				if( $('#servicesLink').hasClass('active') ){
-					$('body').animate({
-						scrollTop: $("#servicesSection").offset().top
-					}, 2000);
-
-				}
-			});
-		}
-	}
-});
-
-*/

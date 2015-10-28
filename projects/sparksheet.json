@@ -12,11 +12,11 @@
 		"AGENCY": "Spafax",
 		"SERVICES" : "Visual Design, Illustration, Data Visualization, Animation",
 		"CATEGORY" : "Website, Banners, Infographics, Animation, GIFs",
-		"AWARDS" : "<b>Canadian Online Publishing Awards, 2015</b><br/>Infographic/Data Visualization:<br/><a>The Year in Content, Media and Marketing 2014</a>Nomination<br/><br/><b>The Eddies, 2014</b><br/>Best Standalone Digital Magazine, B2B:<br/><a>The 2014 Fifa World Cup Team Brand Index</a><br/>WINNER (Gold)<br/><br/><b>Canadian Online Publishing Awards, 2014</b><br/>Best Article or Series:<br/><i>Should Coke Quit its Content Marketing Journey</i><br/>WINNER (Gold)<br/>Best Website Design:<br/>WINNER (Gold)<br/>Best Corporate Website:<br/>WINNER (Gold)<br/><br/><b>Stipso 2014</b><br/>Infographic of the Week<br/><a>The Year in Content, Media and Marketing 2014</a>",
+		"AWARDS" : "<b>Canadian Online Publishing Awards, 2015</b><br/>Infographic/Data Visualization:<br/><a class=\"sidebarLink\" href=\"http://sparksheet.com/infographic-year-content-media-marketing-2014/\" >The Year in Content, Media and Marketing 2014</a><br/>Nomination<br/><br/><b>The Eddies, 2014</b><br/>Best Standalone Digital Magazine, B2B:<br/><a class=\"sidebarLink\" href=\"http://sparksheet.com/2014-fifa-world-cup-team-brand-index/ \">The 2014 Fifa World Cup Team Brand Index</a><br/>WINNER (Gold)<br/><br/><b>Canadian Online Publishing Awards, 2014</b><br/>Best Article or Series:<br/><i>Should Coke Quit its Content Marketing Journey</i><br/>WINNER (Gold)<br/>Best Website Design:<br/>WINNER (Gold)<br/>Best Corporate Website:<br/>WINNER (Gold)<br/><br/><b>Stipso 2014</b><br/>Infographic of the Week<br/><a class=\"sidebarLink\" href=\"http://www.stipso.com/blog/2014/12/12/infographic-2014-marketing-sparksheet/\">The Year in Content, Media and Marketing 2014</a>",
 		"CREDITS" : "Charles Lim, Sophie Woodrooffe, Dan Levy and Andrew Jeglum"
 	},
 
-	"link" : "http://sparksheet.com/",
+	"link" : "sparksheet.com/",
 
 	"images": {
 		"desktop" : {

@@ -13,8 +13,12 @@
 		<div ng-bind-html="description" class="padding-bottom contentParagraph"></div>
 		<div id="sidebar" class="padding-bottom">
 			<ul ng-repeat="(key, item) in projectSingle.sidebar">
-				<li class="sidebarTitle sansSerif">{{ key }}</li>
-				<li class="sidebarInfo" ng-bind-html="item"></li>
+				<li class="sidebarTitle sansSerif" ng-if="key !== 'See More'">{{ key }}</li>
+				<li class="sideBarSeeMore" ng-if="key === 'See More'"><a ng-click="seeMore()" class="seeMoreLink">See More Awards</a></li>
+				<li ng-if="key !== 'See More'" class="sidebarInfo" ng-bind-html="item"></li>
+				<li ng-if="key === 'See More'" ng-bind-html="item" class="sidebarInfo hiddenSideBar"></li>
+				<br ng-if="key === 'See More'"/>
+
 
 			</ul>
 		</div>
