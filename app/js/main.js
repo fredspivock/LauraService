@@ -92,8 +92,8 @@ var wind = this, // Gets window object
     last = 0,    // The last read top value
     delay = 100, // The delay for the setInterval
     threshold = 30,    // The max scroll distance before showing/hiding the nav
-    minWidth = 900;    // The minimum widht of the window before it becomes static
-
+    minWidth = 900,    // The minimum widht of the window before it becomes static
+    isUp = false;
 
 // I always set a variable to my setIntervals in case I want to stop them later on
 var navMovement = setInterval(function() {
@@ -103,18 +103,19 @@ var navMovement = setInterval(function() {
 
     if($window.width() > minWidth) {
 
-        if($window.scrollTop() - last < -threshold) { // Happens if the difference in scroll is below the negative threshold
+        if(($window.scrollTop() - last < -threshold) && isUp === true) { // Happens if the difference in scroll is below the negative threshold
             $nav.css({ // Put the nav at the top of the window
                 top: 0
             });
+            isUp = false;
         }
-        else if($window.scrollTop() - last > threshold){ // Happend if the difference in scroll is above the threshold
+        else if(($window.scrollTop() - last > threshold) && isUp === false) { // Happend if the difference in scroll is above the threshold
             $nav.css({ // Hides the navigation
                 top: -$nav.height()
             });
+            isUp = true;
         }
         last = $window.scrollTop(); // Updates the previous scroll value
-
         //When below the threshold, display the scrolled menu
         if($window.scrollTop() > threshold) {
 

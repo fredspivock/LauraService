@@ -82,13 +82,13 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 			if( seeMoreOpen === false){
 				$('.hiddenSideBar').css('display', 'block');
-				$('.seeMoreLink').html("See Less");
+				$('.seeMoreLink').html("See Less Awards");
 				seeMoreOpen = true;
 			}
 			else if(seeMoreOpen === true) {
 
 				$('.hiddenSideBar').css('display', 'none');
-				$('.seeMoreLink').html("See More");
+				$('.seeMoreLink').html("See More Awards");
 				seeMoreOpen = false;
 			}
 				

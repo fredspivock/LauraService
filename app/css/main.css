@@ -378,6 +378,7 @@ img {
 .sidebarLink {
 
 	color: #7d79e9 !important;
+	text-decoration: underline !important;
 }
 
 /* See More items */
@@ -385,7 +386,9 @@ img {
 
 	text-decoration: underline;
 	cursor: pointer;
-
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-bottom: 25px;
 }
 
 
@@ -395,6 +398,13 @@ img {
 
 	display: none;
 
+}
+
+
+.seeMoreLink {
+
+	cursor: pointer;
+	color: #7d79e9;	
 }
 
 
