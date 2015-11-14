@@ -80,6 +80,10 @@ h1 {
 	color: white;
 }
 
+.navLinksA:hover {
+
+	color: #59ff89;
+}
 
 
 /* Nav Bar */
@@ -377,9 +381,15 @@ img {
 
 .sidebarLink {
 
-	color: #7d79e9 !important;
+	color: #808080 !important;
 	text-decoration: underline !important;
 }
+
+.sidebarLink:hover {
+
+	color: #7d79e9 !important;
+}
+
 
 /* See More items */
 .sideBarSeeMore {
@@ -389,6 +399,18 @@ img {
 	font-weight: bold;
 	font-size: 1.2em;
 	padding-bottom: 25px;
+
+}
+
+.seeMoreLink {
+
+	color: #808080 !important;
+}
+
+.seeMoreLink:hover {
+
+	color: #7d79e9 !important;
+
 }
 
 
@@ -415,6 +437,19 @@ img {
 	line-height: 2;
 	font-size: 1.2em;
 	color: #808080;
+}
+
+.contentLink {
+
+	color: #808080 !important;
+	text-decoration: underline !important;
+
+}
+
+.contentLink:hover {
+
+	color: #7d79e9 !important;
+
 }
 
 

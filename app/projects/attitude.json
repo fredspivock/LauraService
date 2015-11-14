@@ -5,14 +5,14 @@
 	"year": "2014—2015",
 	"backgroundImage2x": "img/attitude/2x-Altitude-Community-1.jpg",
 	"backgroundImage": "img/attitude/Normal-Altitude-Community-1.jpg",
-	"description": "The Altitude Community is an exclusive platform where Air Canada’s frequent flyers can share travel tips. Members can make lists of their favourite hotels, bars, restaurants, and sights anywhere in the world or browse recommendations written by other members. The rigorous planning, execution and testing of the beta site took more than a year. Designing a social media platform from scratch required extensive research and a comprehensive competitive analysis of other social networks. Rather than trying to reinvent the wheel we took insight and solutions from our research and reused or reconfigured simple patterns and features which we observed across multiple social networks. I provided direction on the team by aiding with concept development, endless sketching of UI patterns, designing multiple iterations of sitemaps, wireframes and mockups, selecting imagery, designing assets, storyboarding, diagramming behaviours and usability-testing.",
+	"description": "The Altitude Community is an exclusive platform where Air Canada’s frequent flyers can share travel tips. Members can make lists of their favourite hotels, bars, restaurants, and sights anywhere in the world or browse recommendations from other members. The rigorous planning, execution and testing of the beta site took more than a year. Designing a social media platform from scratch required extensive research and a comprehensive competitive analysis of other social networks. Rather than trying to reinvent the wheel we took insight and solutions from our research and reused or reconfigured simple patterns and features which we observed across multiple social networks.<br/><br/>I acted as the Art Director for the project and assisted with concept development and photo research. One of my bigger UI/UX tasks was to make the complex \"Create a List\" process easier for users. I sketched multiple user-interface patterns and came up with a number of solutions that underwent rigorous user-testing sessions. The result was a custom, easy-to-follow step-by-step process for list creation. The site currently has 11000 registered users and is an ongoing Air Canada product.",
 
 	"sidebar": {
 		"AGENCY": "Spafax",
-		"CATEGORY" : "Social network, website",
-		"SERVICES" : "UX/UI, Art Direction, Illustration, Photo Research, Prototyping and User-Testing",
+		"CATEGORY" : "Social network<br/>Website",
+		"SERVICES" : "UX/UI<br/>Art Direction<br/>Illustration<br/>Photo Research<br/>Prototyping<br/>User-Testing",
 		"RECOGNITION" : "Showcased at a Mindshare Canada Huddle",
-		"CREDITS" : "Jean-François Légaré, Charles Lim, Arjun Basu, Ilana Weitzman, Andrew Jeglum, Long Nguyen, Mélisa Discepola, Christopher Waldau, François Hoang, Hope Little, and Adrian Mellognio."
+		"CREDITS" : "Jean-François Légaré<br/>Charles Lim<br/>Arjun Basu<br/>Ilana Weitzman<br/>Andrew Jeglum<br/>Long Nguyen<br/>Mélisa Discepola<br/>Christopher Waldau<br/>François Hoang<br/>Hope Little<br/>Adrian Mellognio."
 	},
 
 	"link" : "altitude-community.aircanada.com",

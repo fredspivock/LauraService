@@ -39,8 +39,8 @@ lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 	}]);
 
-lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routeParams',  
-	function($scope, $http, $routeParams){
+lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routeParams', '$timeout', 
+	function($scope, $http, $routeParams, $timeout){
 
 
 		//clears a navbar
@@ -107,6 +107,13 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
 		//set view to top after load
 		window.scrollTo(0, 0);
+
+		//makes sure the nav bar is clear
+		$timeout(function() {
+
+			clearNav();
+
+  		}, 300);
 
 }]);
 
@@ -187,6 +194,12 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 
 		});
 
+		$http.get('projects/homepageProjects.json').success(function(data){
+
+			$scope.projects = data;
+		});
+
+
 		//set view to top after load
 		window.scrollTo(0, 0);
 
@@ -198,12 +211,6 @@ lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location',
 			if( $('#servicesLink').hasClass('active') && !$('#servicesLink').hasClass('clicked') ){
 			
 				$anchorScroll("servicesSection");
-  			}
-
-  			if($('#servicesLink').hasClass('clicked') && $('#servicesLink').hasClass('active')) {
-  				$('body').animate({
-					scrollTop: $("#servicesSection").offset().top,
-				}, 2000);
   			}
 
   		}, 300);
