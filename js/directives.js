@@ -8,14 +8,18 @@ lauraServiceDirectives.directive('scrollOnClick', function($timeout){
 		restrict:'A',
 		link: function(scope, $elm){
 			
-			$timeout( $elm.on('click', function(){
+			$elm.on('click', function(){ 
 
-				$('#servicesLink').addClass('clicked');
+				$timeout( function(){
 
-				$('body').animate({
-					scrollTop: $("#servicesSection").offset().top,
-				}, 2000);
-			}), 300);
+					$('#servicesLink').addClass('clicked');
+
+					$('body').animate({
+						scrollTop: $("#servicesSection").offset().top - 30,
+					}, 2000);
+
+				}, 300);
+			});
 		}
 	}
 
