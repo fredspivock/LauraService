@@ -3,14 +3,12 @@ var lauraService = angular.module("lauraServiceApp", [
 	'lauraServiceControllers',
 	'ngSanitize',
 	'lauraServiceDirectives',
-	'angular-loading-bar',
 	'ngAnimate'
 	
 	]);
 
-lauraService.config(['$routeProvider', 'cfpLoadingBarProvider', function($routeProvider, cfpLoadingBarProvider){
+lauraService.config(['$routeProvider', function($routeProvider){
 
-	cfpLoadingBarProvider.includeSpinner = false;
 	
 	$routeProvider.
 	when('/projects', {

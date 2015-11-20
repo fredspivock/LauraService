@@ -1,14 +1,9 @@
 /*contollers for Laura Sercice*/
 
-var lauraServiceControllers = angular.module('lauraServiceControllers', ['angular-loading-bar', 'ngSanitize'])
-.config(function(cfpLoadingBarProvider){
-
-	cfpLoadingBarProvider.includeSpinner = false;;
-});
+var lauraServiceControllers = angular.module('lauraServiceControllers', ['ngSanitize']);
 
 //Home page Controller
-lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http', 'cfpLoadingBar',
-	function($scope, $http, cfpLoadingBar){
+lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http', function($scope, $http){
 
 		//makes opaue
 		var  opaqueNav = function(){
