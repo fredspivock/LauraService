@@ -252,9 +252,9 @@ img {
 
 
 #homepageHead {
-
 	height: 750px;
 	position: relative;
+	transition: .3s;
 }
 
 #homepageHeadText {
