@@ -14,8 +14,14 @@ lauraServiceDirectives.directive('scrollOnClick', function($timeout){
 
 					$('#servicesLink').addClass('clicked');
 
+					var scrollOffset = 200;
+
+					if ($('html').hasClass('ios')) {
+						scrollOffset = 440;
+					}
+
 					$('body').animate({
-						scrollTop: $("#servicesSection").offset().top - 30,
+						scrollTop: $("#servicesSection").offset().top - scrollOffset,
 					}, 2000);
 
 				}, 300);
