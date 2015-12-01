@@ -5,113 +5,111 @@ var lauraServiceControllers = angular.module('lauraServiceControllers', ['ngSani
 //Home page Controller
 lauraServiceControllers.controller('HomepageCtrl', ['$scope', '$http', function($scope, $http){
 
-		//makes opaue
-		var  opaqueNav = function(){
+    //makes opaue
+    var  opaqueNav = function(){
 
-			$('#header-wrap').removeClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
+      $('#header-wrap').removeClass('clear');
+      $('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
 
-		}
+    }
 
-		var setHeaderSpaceHome = function () {
+    // var setHeaderSpaceHome = function () {
+    //   var winHeight = $(window).height();
+    //   winHeight = .95 * winHeight;
+    //   $("#homepageHead").css("height", winHeight + "px" );
+    // }
 
+    opaqueNav();
 
-        	var winHeight = $(window).height();
+    setTimeout(function(){
+      setHeadSpace();
+    }, 500);
 
-        	winHeight = .95 * winHeight;
+    $http.get('projects/homepageProjects.json').success(function(data){
 
-	        $("#homepageHead").css("height", winHeight + "px" );
+      $scope.projects = data;
+    });
 
-		}
+    //set view to top after load
+    window.scrollTo(0, 0);
 
-		opaqueNav();
-		setHeaderSpaceHome();
-
-		$http.get('projects/homepageProjects.json').success(function(data){
-
-			$scope.projects = data;
-		});
-
-		//set view to top after load
-		window.scrollTo(0, 0);
-
-	}]);
+  }]);
 
 lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routeParams', '$timeout', 
-	function($scope, $http, $routeParams, $timeout){
+  function($scope, $http, $routeParams, $timeout){
 
 
-		//clears a navbar
+    //clears a navbar
 
-		var seeMoreOpen =  false;
+    var seeMoreOpen =  false;
 
-		var  clearNav = function(){
+    var  clearNav = function(){
 
-			$('#header-wrap').addClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
-		}
+      $('#header-wrap').addClass('clear');
+      $('#icon').attr('src', 'img/icon/LauraServiceIconWhite.svg');
+    }
 
-		clearNav();
-
-
-		//Getting a individual
-		$http.get('projects/' + $routeParams.id +'.json').success(function(data){
-
-			$scope.projectSingle = data;
-			$scope.description = data.description;
-
-		});
-
-		
-		//function scrolls to page top
-		$scope.toPageTop = function() {
-
-			$("html, body").animate({
-
-				scrollTop: 0,
-
-			}, "slow");
-		}
+    clearNav();
 
 
-		//function See more Button
+    //Getting a individual
+    $http.get('projects/' + $routeParams.id +'.json').success(function(data){
 
-		$scope.seeMore = function() {
+      $scope.projectSingle = data;
+      $scope.description = data.description;
 
-			if( seeMoreOpen === false){
-				$('.hiddenSideBar').css('display', 'block');
-				$('.seeMoreLink').html("See Less Awards");
-				seeMoreOpen = true;
-			}
-			else if(seeMoreOpen === true) {
+    });
 
-				$('.hiddenSideBar').css('display', 'none');
-				$('.seeMoreLink').html("See More Awards");
-				seeMoreOpen = false;
-			}
-				
-		}
+    
+    //function scrolls to page top
+    $scope.toPageTop = function() {
+
+      $("html, body").animate({
+
+        scrollTop: 0,
+
+      }, "slow");
+    }
 
 
+    //function See more Button
+
+    $scope.seeMore = function() {
+
+      if( seeMoreOpen === false){
+        $('.hiddenSideBar').css('display', 'block');
+        $('.seeMoreLink').html("See Less Awards");
+        seeMoreOpen = true;
+      }
+      else if(seeMoreOpen === true) {
+
+        $('.hiddenSideBar').css('display', 'none');
+        $('.seeMoreLink').html("See More Awards");
+        seeMoreOpen = false;
+      }
+        
+    }
 
 
 
-		//For the More Work, gets main list
-		$http.get('projects/homepageProjects.json').success(function(data){
-
-			$scope.projects = data;
-		});
 
 
-		//set view to top after load
-		window.scrollTo(0, 0);
+    //For the More Work, gets main list
+    $http.get('projects/homepageProjects.json').success(function(data){
 
-		//makes sure the nav bar is clear
-		$timeout(function() {
+      $scope.projects = data;
+    });
 
-			clearNav();
 
-  		}, 300);
+    //set view to top after load
+    window.scrollTo(0, 0);
+
+    //makes sure the nav bar is clear
+    $timeout(function() {
+
+      clearNav();
+
+      }, 300);
 
 }]);
 
@@ -120,98 +118,94 @@ var myHelper = myHelper || {};
 
 myHelper.helpers = {
 
-	underline: function(){
+  underline: function(){
 
-		var currentHash = location.hash.substring(1);
+    var currentHash = location.hash.substring(1);
 
-		//cuts the slash from the returned string
-		currentHash = currentHash.slice(1);
+    //cuts the slash from the returned string
+    currentHash = currentHash.slice(1);
 
-		currentHash = currentHash.split('/');
-		currentHash = currentHash[0];
+    currentHash = currentHash.split('/');
+    currentHash = currentHash[0];
 
-		//underline remover
-		//list of links
-		var listOfLinks = ['projects', 'about', 'services'];
+    //underline remover
+    //list of links
+    var listOfLinks = ['projects', 'about', 'services'];
 
-		//go through list and remove css
-		for(var i = 0; i < listOfLinks.length; i++)
-		{
-			listOfLinks[i] = listOfLinks[i] + 'Link';
-			$('#' + listOfLinks[i]).css("border-bottom", "none");
-		}
+    //go through list and remove css
+    for(var i = 0; i < listOfLinks.length; i++)
+    {
+      listOfLinks[i] = listOfLinks[i] + 'Link';
+      $('#' + listOfLinks[i]).css("border-bottom", "none");
+    }
 
-		//adds link to the name to match the id of the 
-		currentHash = currentHash + "Link";
-		$('#' + currentHash).css("border-bottom", "1px solid #59ff89").addClass("active");
-	},
+    //adds link to the name to match the id of the 
+    currentHash = currentHash + "Link";
+    $('#' + currentHash).css("border-bottom", "1px solid #59ff89").addClass("active");
+  },
 
-	};
+  };
 
 
 //};
 
 lauraServiceControllers.controller('HelperCtrl', ['$scope', 
-	function($scope){
+  function($scope){
 
-			$scope.helpers = myHelper.helpers;
+      $scope.helpers = myHelper.helpers;
 
-	}]);
+  }]);
 
 
 lauraServiceControllers.controller('AboutCtrl', ['$scope', '$http', '$location', '$anchorScroll', '$timeout',
-	function($scope, $http, $location, $anchorScroll, $timeout){
+  function($scope, $http, $location, $anchorScroll, $timeout){
 
-		//makes opaue
-		var  opaqueNav = function(){
+    //makes opaue
+    var  opaqueNav = function(){
 
-			$('#header-wrap').removeClass('clear');
-			$('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
+      $('#header-wrap').removeClass('clear');
+      $('#icon').attr('src', 'img/icon/LauraServiceIconBlack.svg');
 
-		}
+    }
 
-		var setHeaderSpaceAbout = function () {
+    // var setHeaderSpaceAbout = function () {
+    //   var winHeight = $(window).height();
+    //   winHeight = .95 * winHeight;
+    //   $("#homepageHead").css("height", winHeight + "px" );
+    // }
 
+    opaqueNav();
 
-        	var winHeight = $(window).height();
+    setTimeout(function(){
+      setHeadSpace();
+    }, 500);
 
-        	winHeight = .95 * winHeight;
+    $http.get('projects/about.json').success(function(data){
 
+      $scope.about = data;
 
-	        $("#homepageHead").css("height", winHeight + "px" );
+    });
 
-		}
+    $http.get('projects/homepageProjects.json').success(function(data){
 
-		opaqueNav();
-
-		setHeaderSpaceAbout();
-
-		$http.get('projects/about.json').success(function(data){
-
-			$scope.about = data;
-
-		});
-
-		$http.get('projects/homepageProjects.json').success(function(data){
-
-			$scope.projects = data;
-		});
+      $scope.projects = data;
+    });
 
 
-		//set view to top after load
-		window.scrollTo(0, 0);
+    //set view to top after load
+    window.scrollTo(0, 0);
 
 
-		
-		$timeout(function() {
+    
+    $timeout(function() {
 
-			//check if the link was pressed or url is set to "services"
-			if( $('#servicesLink').hasClass('active') && !$('#servicesLink').hasClass('clicked') ){
-			
-				$anchorScroll("servicesSection");
-  			}
+      //check if the link was pressed or url is set to "services"
+      if( $('#servicesLink').hasClass('active') && !$('#servicesLink').hasClass('clicked') ){
+      
+        $anchorScroll("servicesSection");
+        }
 
-  		}, 300);
+      }, 300);
 
 
 }]);
