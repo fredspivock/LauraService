@@ -136,12 +136,13 @@ myHelper.helpers = {
     for(var i = 0; i < listOfLinks.length; i++)
     {
       listOfLinks[i] = listOfLinks[i] + 'Link';
-      $('#' + listOfLinks[i]).css("border-bottom", "none");
+      // $('#' + listOfLinks[i]).css("border-bottom", "none");
+      $('#' + listOfLinks[i]).removeClass('active');
     }
 
     //adds link to the name to match the id of the 
     currentHash = currentHash + "Link";
-    $('#' + currentHash).css("border-bottom", "1px solid #59ff89").addClass("active");
+    $('#' + currentHash).addClass("active");
   },
 
   };
