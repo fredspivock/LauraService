@@ -158,8 +158,3 @@ $(document).ready(function(){
 
 });
 
-$(window).load(function(){
-    $('.social-share-toggle').click(function(){
-        $('.social-share-list').toggleClass('show-social-share');
-    });
-});

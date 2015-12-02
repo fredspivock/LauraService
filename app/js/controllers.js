@@ -109,7 +109,12 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
       clearNav();
 
-      }, 300);
+    }, 300);
+
+    // shareToggle();
+    $('.social-share-toggle').click(function(){
+        $('.social-share-list').toggleClass('show-social-share');
+    });
 
 }]);
 
