@@ -5,16 +5,16 @@
   text-align: right;
 }
 .social-share-image {
-  width: 30px;
+  width: 24px;
 }
 .social-share-item {
   float: left;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .social-share-list {
   list-style: none;
   opacity: 0;
-  margin-top: -25px;
+  margin-top: -22px;
   padding-left: 0;
   pointer-events: none;
   /*position: absolute;*/
@@ -26,7 +26,7 @@
 .social-share-list.show-social-share {
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(-85px);
+  transform: translateX(-70px);
 }
 .social-share-toggle {
   /*background: #ddd;*/
@@ -38,8 +38,10 @@
   top: -5px;
   right: 0;
   z-index: 100;
+  text-decoration: underline;
   white-space: nowrap;
 }
+.social-share-toggle:hover {text-decoration: none;}
 
 
 
@@ -361,9 +363,7 @@ img {
 }
 
 #shareLink {
-
 	color: #7d79e9;
-	text-decoration: underline;
 }
 
 #shareProject {
