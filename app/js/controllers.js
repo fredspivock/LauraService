@@ -113,7 +113,15 @@ lauraServiceControllers.controller('ProjectCtrl', ['$scope', '$http', '$routePar
 
     // shareToggle();
     $('.social-share-toggle').click(function(){
-        $('.social-share-list').toggleClass('show-social-share');
+      $('.social-share-list').toggleClass('show-social-share');
+      var pageTitle = $('#title').text();
+      var currentURL = encodeURIComponent(location.href);
+      var emailURL = "mailto:laura.service1@gmail.com?subject=From%20lauraservice.ca";
+      var facebookURL = "http://www.facebook.com/sharer.php?u=" + currentURL;
+      var twitterURL = "https://twitter.com/share?text=" + pageTitle + "&amp;url=" + currentURL;
+      $('.social-share-link.email').attr('href', emailURL);
+      $('.social-share-link.facebook').attr('href', facebookURL);
+      $('.social-share-link.twitter').attr('href', twitterURL);
     });
 
 }]);
