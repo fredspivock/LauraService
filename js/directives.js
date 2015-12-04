@@ -21,7 +21,7 @@ lauraServiceDirectives.directive('scrollOnClick', function($timeout){
 					}
 
 					$('body').animate({
-						scrollTop: $("#servicesSection").offset().top - scrollOffset,
+						scrollTop: $("#servicesSection").offset().top - scrollOffset
 					}, 2000);
 
 				}, 300);
