@@ -14,10 +14,15 @@ lauraServiceDirectives.directive('scrollOnClick', function($timeout){
 
 					$('#servicesLink').addClass('clicked');
 
-					var scrollOffset = 200;
+					var scrollOffset = 300;
+					var windowWidth = $(window).width();
+					var windowHeight = $(window).height();
 
 					if ($('html').hasClass('ios')) {
-						scrollOffset = 440;
+						// alert($(window).height());
+						if (windowHeight == 372) scrollOffset = 760; // iPhone 4
+						else if (windowHeight == 460) scrollOffset = 700; // iPhone 5
+						else if (windowWidth == 375) scrollOffset = 600; // iPhone 6
 					}
 
 					$('body').animate({
