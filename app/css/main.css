@@ -23,6 +23,7 @@
   z-index: 50;
   transition: 0.3s;
 }
+@media (max-width: 520px) {.social-share-list {margin-top: -1px; opacity: 1; pointer-events: auto;}}
 .social-share-list.show-social-share {
   opacity: 1;
   pointer-events: auto;
@@ -41,6 +42,7 @@
   text-decoration: underline;
   white-space: nowrap;
 }
+@media (max-width: 520px) {.social-share-toggle {display: none;}}
 .social-share-toggle:hover {text-decoration: none;}
 
 
