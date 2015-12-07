@@ -479,13 +479,14 @@ img {
 
 
 .contentParagraph {
-
 	order: 1; -webkit-order: 1;
 	width: 65%;
 	line-height: 2;
 	font-size: 1.2em;
 	color: #808080;
 }
+.contentParagraph a {color: #808080; text-decoration: underline;}
+.contentParagraph a:hover {color: #7d79e9; text-decoration: none;}
 
 .contentLink {
 
