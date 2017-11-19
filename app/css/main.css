@@ -518,18 +518,18 @@ img {
 	top:20px;
 }
 
-#projectSingleLink {
+#primaryButton {
 
-	padding-top: 10px;
-	text-decoration: underline;
-	color: #7D79E9;
-	font-size: 1.5em;
+	padding: 10px 10px 15px 15px;
+	background-color: #0e4afb;
+	color: #ffffff;
+	font-family: ;
+	font-size: 1.1em;
 	position: relative;
     top: 5px;
 }
 
 #projectSingleBack {
-
 	text-decoration: underline;
 	color: #707070;
 	cursor: pointer;
