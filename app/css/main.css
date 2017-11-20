@@ -1,6 +1,6 @@
 p {margin-bottom: 2em;}
 
-.email-link:hover {color: #7d79e9}
+.email-link:hover {color: #0e4afb}
 
 .share-container {
   position: relative;
@@ -308,7 +308,7 @@ img {
 }
 
 #homepageHeadText {
-
+	color: #808080;
 	text-align:left;
 	display:inline-block;
 	position: absolute;
@@ -318,7 +318,7 @@ img {
 
 #homepageName {
 
-	color: #0e4afb;
+	color: #000000;
 	
 }
 
@@ -435,7 +435,7 @@ img {
 
 .sidebarLink:hover {
 
-	color: #7d79e9 !important;
+	color: #0e4afb !important;
 }
 
 
@@ -506,6 +506,7 @@ img {
 /* project footer */
 
 #projectFooter {
+	margin-bottom: 30px;
 	margin-top: 30px;
 	text-align: center;
 	margin-left: auto;
@@ -513,7 +514,8 @@ img {
 }
 
 #projectFooterTitle {
-	margin-top: 35px;
+	width: 90%;
+	margin: 35px auto;
 	padding-top: 25px;
 	border-top: black solid 2px;
 	position: relative;
@@ -552,9 +554,8 @@ img {
 #greenArrow {
 
 	position: relative;
-	height: 55px;
-
-	top: 20px;
+	height: 22px;
+	top: -5px
 	z-index: 3000;
 
 }
